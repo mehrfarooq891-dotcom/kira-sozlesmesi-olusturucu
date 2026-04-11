@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kira-sozlesmesi-olusturucu.com/sitemap.xml
+Sitemap: https://kira-sozlesmesi-olusturucu.vercel.app/sitemap.xml
