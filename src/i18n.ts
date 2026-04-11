@@ -1,0 +1,382 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+const resources = {
+  tr: {
+    translation: {
+      nav: {
+        create: 'Sözleşme Oluştur',
+        calculator: 'Artış Hesaplama',
+        howTo: 'Nasıl Doldurulur?',
+        sample: 'Örnek PDF',
+        start: 'Hemen Başla'
+      },
+      hero: {
+        title: 'Kira Sözleşmesi Oluşturucu',
+        subtitle: 'Dakikalar içinde profesyonel kira sözleşmenizi oluşturun. Ücretsiz, hızlı ve güvenli.',
+        badge1: 'Tamamen Ücretsiz',
+        badge2: 'Verileriniz Cihazınızda Kalır',
+        badge3: 'Anında PDF İndir'
+      },
+      form: {
+        step: 'Adım',
+        next: 'Sonraki Adım',
+        back: 'Geri',
+        download: 'Sözleşmeyi İndir (PDF)',
+        generating: 'Hazırlanıyor...',
+        preview: 'Canlı Önizleme',
+        autoSave: 'Otomatik Kayıt',
+        privacyNote: 'Gizlilik Notu',
+        privacyDesc: 'Girdiğiniz bilgiler hiçbir şekilde sunucularımıza kaydedilmez. Tüm işlemler tarayıcınızda gerçekleşir. Sayfayı yenilediğinizde bilgileriniz silinecektir.',
+        steps: {
+          tenant: 'Kiracı Bilgileri',
+          landlord: 'Kiraya Veren Bilgileri',
+          property: 'Taşınmaz Bilgileri',
+          rent: 'Kira Bedeli',
+          special: 'Özel Şartlar'
+        },
+        fields: {
+          fullName: 'Ad Soyad',
+          fullNamePlaceholder: 'Örn: Ahmet Yılmaz',
+          tcNo: 'TC Kimlik No',
+          tcNoPlaceholder: '11 haneli TC No',
+          birthDate: 'Doğum Tarihi',
+          phone: 'Telefon',
+          phonePlaceholder: '05xx xxx xx xx',
+          email: 'E-posta',
+          emailPlaceholder: 'ahmet@ornek.com',
+          address: 'İkametgah Adresi',
+          addressPlaceholder: 'Tam adresinizi giriniz',
+          propertyAddress: 'Taşınmaz Adresi',
+          propertyAddressPlaceholder: 'Sözleşmeye konu olan mülkün tam adresi',
+          city: 'İl',
+          cityPlaceholder: 'Örn: İstanbul',
+          district: 'İlçe',
+          districtPlaceholder: 'Örn: Kadıköy',
+          grossArea: 'Brüt m²',
+          grossAreaPlaceholder: 'Örn: 120',
+          floor: 'Bulunduğu Kat',
+          floorPlaceholder: 'Örn: 3',
+          flatNo: 'Daire No',
+          flatNoPlaceholder: 'Örn: 12',
+          titleDeedNo: 'Tapu No / Ada Parsel',
+          titleDeedNoPlaceholder: 'Opsiyonel',
+          heatingType: 'Isınma Tipi',
+          heatingTypePlaceholder: 'Örn: Doğalgaz (Kombi)',
+          monthlyRent: 'Aylık Kira Bedeli (₺)',
+          monthlyRentPlaceholder: 'Örn: 15000',
+          deposit: 'Depozito Bedeli (₺)',
+          depositPlaceholder: 'Örn: 30000',
+          paymentDay: 'Ödeme Günü (Ayın Kaçında?)',
+          paymentDayPlaceholder: 'Örn: 5',
+          startDate: 'Kira Başlangıç Tarihi',
+          endDate: 'Kira Bitiş Tarihi',
+          iban: 'Kira Ödemesi Yapılacak IBAN',
+          ibanPlaceholder: 'TRxx xxxx xxxx xxxx xxxx xxxx xx',
+          petProhibited: 'Evcil Hayvan Yasağı',
+          smokingProhibited: 'Sigara İçme Yasağı',
+          renovationProhibited: 'Tadilat Yasağı',
+          duesByTenant: 'Aidat Kiracıya Aittir',
+          billsByTenant: 'Faturalar Kiracıya Aittir',
+          subleaseProhibited: 'Alt Kiralama Yasağı',
+          additionalText: 'Eklemek İstediğiniz Diğer Şartlar',
+          additionalTextPlaceholder: 'Buraya sözleşmeye eklemek istediğiniz diğer özel maddeleri yazabilirsiniz...'
+        },
+        validation: {
+          required: 'Bu alan zorunludur',
+          tc: 'Geçerli bir TC No giriniz',
+          email: 'Geçerli bir e-posta giriniz',
+          phone: 'Geçerli bir telefon giriniz'
+        }
+      },
+      footer: {
+        desc: "Türkiye'nin en hızlı ve güvenilir kira sözleşmesi oluşturma platformu. Verileriniz sadece cihazınızda saklanır.",
+        links: 'Hızlı Bağlantılar',
+        center: 'Bilgi Merkezi',
+        contact: 'İletişim',
+        rights: '© 2026 Kira Sözleşmesi Oluşturucu – Tüm hakları saklıdır'
+      },
+      trust: {
+        badge1: { title: "Tamamen Ücretsiz", desc: "Hiçbir ücret ödemeden sınırsız sözleşme oluşturun." },
+        badge2: { title: "Verileriniz Cihazınızda", desc: "Kişisel verileriniz asla sunucularımıza iletilmez." },
+        badge3: { title: "Anında PDF İndir", desc: "Hazırladığınız sözleşmeyi tek tıkla PDF olarak kaydedin." }
+      },
+      faq: {
+        title: "Sıkça Sorulan Sorular",
+        subtitle: "Kira hukuku ve sözleşme süreci hakkında merak edilenler.",
+        q1: "Kira sözleşmesi noter huzurunda mı yapılmalıdır?",
+        a1: "Kira sözleşmesinin geçerli olması için noter huzurunda yapılması zorunlu değildir. Tarafların kendi aralarında imzaladığı yazılı sözleşmeler de yasal olarak geçerlidir. Ancak imza itirazı gibi durumların önüne geçmek için noter onayı tercih edilebilir.",
+        q2: "Kira artış oranı nasıl hesaplanır?",
+        a2: "Konut kiralarında kira artış oranı, bir önceki kira yılının tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalara göre değişim oranını geçemez. 2024 Temmuz ayı itibarıyla %25'lik sınır kalkmış olup, tekrar TÜFE ortalamasına dönülmüştür.",
+        q3: "Depozito miktarı en fazla ne kadar olabilir?",
+        a3: "Türk Borçlar Kanunu'na göre depozito bedeli, üç aylık kira bedelini aşamaz. Depozitonun bir bankada vadeli tasarruf hesabına yatırılması yasal bir gerekliliktir.",
+        q4: "Kira sözleşmesi ne zaman yenilenmiş sayılır?",
+        a4: "Belirli süreli kira sözleşmelerinde, sürenin bitiminden en az 15 gün önce kiracı tarafından fesih bildirimi yapılmadığı sürece sözleşme aynı şartlarla 1 yıl uzatılmış sayılır.",
+        q5: "Ev sahibi kiracıyı hangi durumlarda evden çıkarabilir?",
+        a5: "Ev sahibi; kiranın ödenmemesi, evin ihtiyacı (kendisi, eşi, altsoyu veya üstsoyu için), evin yeniden inşası veya esaslı onarımı, kiracının tahliye taahhütnamesi vermesi gibi yasal sebeplerle tahliye davası açabilir.",
+        q6: "Aidat ve ortak giderleri kim öder?",
+        a6: "Aksi sözleşmede kararlaştırılmadıkça, kullanım giderleri (elektrik, su, aidat vb.) kiracıya aittir. Ancak binanın demirbaşlarına yönelik giderler (çatı onarımı, asansör değişimi vb.) mülk sahibine aittir.",
+        q7: "Kira sözleşmesi damga vergisi ne kadardır?",
+        a7: "Kira sözleşmeleri damga vergisine tabidir. Vergi oranı, sözleşme süresine ve toplam kira bedeline göre hesaplanır. Genellikle binde 1.89 oranındadır.",
+        q8: "Tahliye taahhütnamesi nedir?",
+        a8: "Kiracının, kiralananı belirli bir tarihte boşaltmayı yazılı olarak üstlendiği belgedir. Geçerli olması için sözleşme imzalandıktan sonraki bir tarihte ve serbest iradeyle verilmiş olması gerekir."
+      },
+      cta: {
+        title: "Hemen Profesyonel Sözleşmenizi Hazırlayın",
+        subtitle: "Karmaşık yasal süreçlerle uğraşmayın. Adım adım formumuzu doldurun ve saniyeler içinde PDF'inizi alın.",
+        button: "Ücretsiz Başlat"
+      },
+      samplePage: {
+        title: "Örnek Kira Sözleşmesi",
+        subtitle: "Yasalara tam uyumlu, profesyonelce hazırlanmış örnek kira sözleşmesini inceleyin ve ücretsiz indirin.",
+        previewTitle: "KİRA SÖZLEŞMESİ (ÖRNEK)",
+        whyTitle: "Neden Bu Taslak?",
+        why1: "2026 Borçlar Kanunu'na tam uyumlu",
+        why2: "Yargıtay kararları gözetilerek hazırlandı",
+        why3: "Hem konut hem işyeri için uygun",
+        downloadBtn: "Örnek PDF İndir",
+        createOwnTitle: "Kendi Sözleşmeni Yap",
+        createOwnDesc: "Örnek taslak yerine kendi bilgilerinizle saniyeler içinde profesyonel bir sözleşme oluşturabilirsiniz.",
+        createOwnBtn: "Şimdi Oluştur"
+      },
+      calcPage: {
+        title: "2026 Kira Artış Hesaplama",
+        subtitle: "Borçlar Kanunu Madde 344 uyarınca yasal kira artış oranınızı saniyeler içinde hesaplayın.",
+        rentLabel: "Mevcut Kira Bedeli (₺)",
+        rentPlaceholder: "Örn: 15000",
+        rateLabel: "TÜFE Oranı (%) - 12 Aylık Ortalama",
+        rateNote: "* Son açıklanan resmi verilere göre otomatik doldurulmuştur.",
+        button: "Hesapla",
+        resultTitle: "Yeni Kira Bedeli",
+        resultIncrease: "Artış Miktarı",
+        legalTitle: "Yasal Dayanak",
+        legalDesc: "Türk Borçlar Kanunu'nun 344. maddesine göre; tarafların yenilenen kira dönemlerinde uygulanacak kira bedeline ilişkin anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalara göre değişim oranını geçmemek koşuluyla geçerlidir.",
+        infoTitle: "Önemli Bilgi",
+        infoDesc: "Konut kiralarında uygulanan %25'lik sabit artış sınırı 1 Temmuz 2024 itibarıyla sona ermiştir. Bu tarihten sonraki yenilemelerde tekrar TÜFE 12 aylık ortalama üst sınırı geçerli olmaya başlamıştır."
+      },
+      howToPage: {
+        badge: "Kapsamlı Hukuki Rehber",
+        title: "Kira Sözleşmesi Nasıl Doldurulur?",
+        subtitle: "Hatasız, yasalara tam uyumlu ve her iki tarafın haklarını koruyan bir sözleşme hazırlamak için bilmeniz gereken her şey bu rehberde.",
+        sec1Title: "Kira Sözleşmesi Neden Önemlidir?",
+        sec1Desc: "Kira sözleşmesi, mülk sahibi ile kiracı arasındaki ilişkiyi yasal bir zemine oturtan en temel belgedir. Sadece bir kağıt parçası değil, olası uyuşmazlıklarda mahkemelerce esas alınan ana delildir.",
+        sec2Title: "Gerekli Belgeler ve Ön Hazırlık",
+        sec2Desc: "Sözleşme aşamasına geçmeden önce şu belgelerin hazır bulundurulması süreci hızlandırır ve güvenliği artırır:",
+        sec2Item1: "Tarafların güncel kimlik fotokopileri",
+        sec2Item2: "Taşınmaza ait güncel tapu kaydı",
+        sec2Item3: "DASK poliçesi",
+        sec2Item4: "Emlak beyannamesi",
+        sec3Title: "Adım Adım Doldurma Rehberi",
+        sec3Step1Title: "1. Kimlik Bilgileri",
+        sec3Step1Desc: "İsimler tam yazılmalı, T.C. Kimlik numaraları mutlaka kontrol edilmelidir.",
+        sec3Step2Title: "2. Kira Bedeli ve Ödeme",
+        sec3Step2Desc: "Kira bedeli hem rakamla hem de yazıyla belirtilmelidir.",
+        sec3Step3Title: "3. Depozito",
+        sec3Step3Desc: "Depozito miktarı 3 aylık kirayı geçemez.",
+        sec4Title: "Dikkat Edilmesi Gerekenler",
+        sec4Desc: "Kira artış oranı konusunda yasal sınır olan TÜFE 12 aylık ortalaması asla aşılmamalıdır.",
+        sec5Title: "Sık Yapılan Hatalar",
+        sec5Error1: "Sözleşme tarihinden önce tahliye taahhütnamesi imzalatmak.",
+        sec5Error2: "Kira bedelini elden ödemek.",
+        sec5Error3: "Sözleşmenin her sayfasını imzalamamak.",
+        ctaBtn: "Hemen Sözleşme Oluşturmaya Başla"
+      }
+    }
+  },
+  en: {
+    translation: {
+      nav: {
+        create: 'Create Agreement',
+        calculator: 'Rent Increase',
+        howTo: 'How to Fill?',
+        sample: 'Sample PDF',
+        start: 'Get Started'
+      },
+      hero: {
+        title: 'Rental Agreement Generator',
+        subtitle: 'Create your professional rental agreement in minutes. Free, fast, and secure.',
+        badge1: 'Completely Free',
+        badge2: 'Data Stays on Your Device',
+        badge3: 'Instant PDF Download'
+      },
+      form: {
+        step: 'Step',
+        next: 'Next Step',
+        back: 'Back',
+        download: 'Download Agreement (PDF)',
+        generating: 'Generating...',
+        preview: 'Live Preview',
+        autoSave: 'Auto Save',
+        privacyNote: 'Privacy Note',
+        privacyDesc: 'The information you enter is never saved on our servers. All operations take place in your browser. Your information will be deleted when you refresh the page.',
+        steps: {
+          tenant: 'Tenant Information',
+          landlord: 'Landlord Information',
+          property: 'Property Information',
+          rent: 'Rent Details',
+          special: 'Special Conditions'
+        },
+        fields: {
+          fullName: 'Full Name',
+          fullNamePlaceholder: 'e.g., John Doe',
+          tcNo: 'ID Number',
+          tcNoPlaceholder: '11-digit ID number',
+          birthDate: 'Birth Date',
+          phone: 'Phone',
+          phonePlaceholder: '05xx xxx xx xx',
+          email: 'Email',
+          emailPlaceholder: 'john@example.com',
+          address: 'Residence Address',
+          addressPlaceholder: 'Enter your full address',
+          propertyAddress: 'Property Address',
+          propertyAddressPlaceholder: 'Full address of the property',
+          city: 'City',
+          cityPlaceholder: 'e.g., Istanbul',
+          district: 'District',
+          districtPlaceholder: 'e.g., Kadikoy',
+          grossArea: 'Gross Area (m²)',
+          grossAreaPlaceholder: 'e.g., 120',
+          floor: 'Floor',
+          floorPlaceholder: 'e.g., 3',
+          flatNo: 'Flat No',
+          flatNoPlaceholder: 'e.g., 12',
+          titleDeedNo: 'Title Deed No / Plot',
+          titleDeedNoPlaceholder: 'Optional',
+          heatingType: 'Heating Type',
+          heatingTypePlaceholder: 'e.g., Natural Gas',
+          monthlyRent: 'Monthly Rent (₺)',
+          monthlyRentPlaceholder: 'e.g., 15000',
+          deposit: 'Deposit Amount (₺)',
+          depositPlaceholder: 'e.g., 30000',
+          paymentDay: 'Payment Day (Day of Month)',
+          paymentDayPlaceholder: 'e.g., 5',
+          startDate: 'Rent Start Date',
+          endDate: 'Rent End Date',
+          iban: 'IBAN for Rent Payment',
+          ibanPlaceholder: 'TRxx xxxx xxxx xxxx xxxx xxxx xx',
+          petProhibited: 'No Pets Allowed',
+          smokingProhibited: 'No Smoking Allowed',
+          renovationProhibited: 'No Renovations Allowed',
+          duesByTenant: 'Maintenance Fees by Tenant',
+          billsByTenant: 'Utility Bills by Tenant',
+          subleaseProhibited: 'No Subleasing Allowed',
+          additionalText: 'Other Terms You Wish to Add',
+          additionalTextPlaceholder: 'You can write other special clauses you want to add to the contract here...'
+        },
+        validation: {
+          required: 'This field is required',
+          tc: 'Enter a valid ID number',
+          email: 'Enter a valid email',
+          phone: 'Enter a valid phone number'
+        }
+      },
+      footer: {
+        desc: "Turkey's fastest and most reliable rental agreement generation platform. Your data is only stored on your device.",
+        links: 'Quick Links',
+        center: 'Information Center',
+        contact: 'Contact',
+        rights: '© 2026 Rental Agreement Generator – All rights reserved'
+      },
+      trust: {
+        badge1: { title: "Completely Free", desc: "Create unlimited agreements without paying any fees." },
+        badge2: { title: "Data Stays on Device", desc: "Your personal data is never transmitted to our servers." },
+        badge3: { title: "Instant PDF Download", desc: "Save your prepared agreement as a PDF with one click." }
+      },
+      faq: {
+        title: "Frequently Asked Questions",
+        subtitle: "Questions about rental law and the agreement process.",
+        q1: "Must the rental agreement be made before a notary?",
+        a1: "It is not mandatory for a rental agreement to be made before a notary to be valid. Written agreements signed between the parties are also legally valid. However, notary approval may be preferred to prevent situations such as signature objections.",
+        q2: "How is the rent increase rate calculated?",
+        a2: "In residential rentals, the rent increase rate cannot exceed the change rate according to the twelve-month averages in the consumer price index (CPI) of the previous rental year. As of July 2024, the 25% limit has been lifted, and the CPI average has been returned to.",
+        q3: "What is the maximum amount of deposit?",
+        a3: "According to the Turkish Code of Obligations, the deposit amount cannot exceed three months' rent. It is a legal requirement to deposit the deposit into a time deposit account in a bank.",
+        q4: "When is a rental agreement considered renewed?",
+        a4: "In fixed-term rental agreements, unless a termination notice is given by the tenant at least 15 days before the end of the term, the agreement is considered extended for 1 year under the same conditions.",
+        q5: "In which cases can the landlord evict the tenant?",
+        a5: "The landlord can file an eviction lawsuit for legal reasons such as non-payment of rent, need for the house (for themselves, spouse, descendants, or ascendants), reconstruction or substantial repair of the house, or the tenant giving an eviction commitment.",
+        q6: "Who pays the dues and common expenses?",
+        a6: "Unless otherwise agreed in the contract, usage expenses (electricity, water, dues, etc.) belong to the tenant. However, expenses for the fixtures of the building (roof repair, elevator replacement, etc.) belong to the property owner.",
+        q7: "How much is the rental agreement stamp duty?",
+        a7: "Rental agreements are subject to stamp duty. The tax rate is calculated according to the contract period and the total rental amount. It is usually 1.89 per thousand.",
+        q8: "What is an eviction commitment?",
+        a8: "It is a document in which the tenant undertakes in writing to vacate the leased property on a certain date. To be valid, it must be given at a date after the contract is signed and with free will."
+      },
+      cta: {
+        title: "Prepare Your Professional Agreement Now",
+        subtitle: "Don't deal with complex legal processes. Fill out our step-by-step form and get your PDF in seconds.",
+        button: "Start for Free"
+      },
+      samplePage: {
+        title: "Sample Rental Agreement",
+        subtitle: "Examine and download the professional sample rental agreement, fully compliant with laws, for free.",
+        previewTitle: "RENTAL AGREEMENT (SAMPLE)",
+        whyTitle: "Why This Draft?",
+        why1: "Fully compliant with 2026 Code of Obligations",
+        why2: "Prepared considering Supreme Court decisions",
+        why3: "Suitable for both residential and commercial use",
+        downloadBtn: "Download Sample PDF",
+        createOwnTitle: "Make Your Own Agreement",
+        createOwnDesc: "Instead of a sample draft, you can create a professional agreement with your own information in seconds.",
+        createOwnBtn: "Create Now"
+      },
+      calcPage: {
+        title: "2026 Rent Increase Calculator",
+        subtitle: "Calculate your legal rent increase rate in seconds according to Code of Obligations Article 344.",
+        rentLabel: "Current Rent Amount (₺)",
+        rentPlaceholder: "e.g., 15000",
+        rateLabel: "CPI Rate (%) - 12-Month Average",
+        rateNote: "* Automatically filled according to the latest official data.",
+        button: "Calculate",
+        resultTitle: "New Rent Amount",
+        resultIncrease: "Increase Amount",
+        legalTitle: "Legal Basis",
+        legalDesc: "According to Article 344 of the Turkish Code of Obligations; agreements of the parties regarding the rent to be applied in renewed rental periods are valid provided that they do not exceed the change rate according to the twelve-month averages in the consumer price index (CPI) in the previous rental year.",
+        infoTitle: "Important Information",
+        infoDesc: "The 25% fixed increase limit applied to residential rentals ended as of July 1, 2024. After this date, the CPI 12-month average upper limit has started to be valid again for renewals."
+      },
+      howToPage: {
+        badge: "Comprehensive Legal Guide",
+        title: "How to Fill a Rental Agreement?",
+        subtitle: "Everything you need to know to prepare an error-free, fully compliant agreement that protects the rights of both parties.",
+        sec1Title: "Why is a Rental Agreement Important?",
+        sec1Desc: "A rental agreement is the most basic document that puts the relationship between the property owner and the tenant on a legal basis. It is the main evidence based on by the courts in possible disputes.",
+        sec2Title: "Required Documents and Preparation",
+        sec2Desc: "Having these documents ready before the contract stage speeds up the process and increases security:",
+        sec2Item1: "Current ID copies of the parties",
+        sec2Item2: "Current title deed record of the property",
+        sec2Item3: "DASK policy",
+        sec2Item4: "Real estate declaration",
+        sec3Title: "Step-by-Step Filling Guide",
+        sec3Step1Title: "1. Identity Information",
+        sec3Step1Desc: "Names must be written in full, and ID numbers must be checked.",
+        sec3Step2Title: "2. Rent Amount and Payment",
+        sec3Step2Desc: "The rent amount must be specified in both numbers and words.",
+        sec3Step3Title: "3. Deposit",
+        sec3Step3Desc: "The deposit amount cannot exceed 3 months' rent.",
+        sec4Title: "Critical Points to Consider",
+        sec4Desc: "The legal limit for the rent increase rate, the CPI 12-month average, should never be exceeded.",
+        sec5Title: "Common Mistakes",
+        sec5Error1: "Signing an eviction commitment before the contract date.",
+        sec5Error2: "Paying the rent in cash.",
+        sec5Error3: "Not signing every page of the contract.",
+        ctaBtn: "Start Creating Agreement Now"
+      }
+    }
+  }
+};
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'tr',
+    lng: 'tr',
+    interpolation: {
+      escapeValue: false
+    }
+  });
+
+export default i18n;
