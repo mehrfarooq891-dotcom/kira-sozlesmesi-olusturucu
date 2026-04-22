@@ -1,6 +1,6 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe } from 'lucide-react';
+import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe, Users } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Home from './components/Home';
@@ -8,6 +8,7 @@ import GeneratorContainer from './components/Generator/GeneratorContainer';
 import HowToFill from './pages/HowToFill';
 import RentIncreaseCalculator from './pages/RentIncreaseCalculator';
 import SamplePDF from './pages/SamplePDF';
+import About from './pages/About';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -27,49 +28,50 @@ function Navbar() {
     { name: t('nav.calculator'), path: '/2026-kira-artisi-hesaplama', icon: Calculator },
     { name: t('nav.howTo'), path: '/kira-sozlesmesi-nasil-doldurulur', icon: HelpCircle },
     { name: t('nav.sample'), path: '/kira-sozlesmesi-ornegi-pdf', icon: Download },
+    { name: t('nav.about'), path: '/hakkimizda', icon: Users },
   ];
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-[#1e3a5f] p-1.5 rounded-lg shadow-sm">
+              <div className="bg-primary p-2 rounded-xl shadow-lg rotate-3">
                 <FileText className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-[#1e3a5f] tracking-tight">KiraSözleşmesi</span>
+              <span className="text-2xl font-serif font-black text-primary tracking-tight">KiraSözleşmesi</span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  "px-3 py-2 text-sm font-medium transition-all rounded-lg hover:bg-gray-50",
-                  location.pathname === item.path ? "text-[#1e3a5f] bg-blue-50/50" : "text-gray-500 hover:text-gray-900"
+                  "px-4 py-2 text-sm font-bold transition-all rounded-xl",
+                  location.pathname === item.path ? "text-primary bg-primary/5" : "text-gray-500 hover:text-primary hover:bg-gray-50"
                 )}
               >
                 {item.name}
               </Link>
             ))}
             
-            <div className="h-4 w-px bg-gray-200 mx-2" />
+            <div className="h-6 w-px bg-gray-100 mx-4" />
             
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#1e3a5f] hover:bg-gray-50 rounded-lg transition-all"
+              className="flex items-center space-x-2 px-4 py-2 text-sm font-bold text-gray-500 hover:text-primary hover:bg-gray-50 rounded-xl transition-all"
             >
               <Globe className="h-4 w-4" />
-              <span>{i18n.language === 'tr' ? '🇹🇷 TR' : '🇬🇧 EN'}</span>
+              <span>{i18n.language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
 
             <Link
               to="/olustur"
-              className="bg-[#1e3a5f] text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#2a4d7a] active:scale-95 transition-all shadow-sm hover:shadow-md"
+              className="ml-4 bg-primary text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-primary/90 hover:scale-[1.02] active:scale-95 transition-all shadow-md"
             >
               {t('nav.start')}
             </Link>
@@ -79,11 +81,11 @@ function Navbar() {
           <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={toggleLanguage}
-              className="p-2 text-gray-500 hover:text-[#1e3a5f]"
+              className="p-2 text-gray-500 hover:text-primary transition-colors"
             >
               <Globe className="h-5 w-5" />
             </button>
-            <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-gray-500 hover:text-[#1e3a5f]">
+            <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-gray-500 hover:text-primary transition-colors">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -94,20 +96,23 @@ function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden bg-white border-b border-gray-100 overflow-hidden shadow-xl"
           >
-            <div className="px-4 pt-2 pb-6 space-y-1">
+            <div className="px-4 pt-4 pb-8 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-[#1e3a5f] hover:bg-gray-50 rounded-lg"
+                  className={cn(
+                    "block px-4 py-4 text-base font-bold rounded-xl transition-colors",
+                    location.pathname === item.path ? "text-primary bg-primary/5" : "text-gray-600 hover:text-primary hover:bg-gray-50"
+                  )}
                 >
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-4">
                     <item.icon className="h-5 w-5" />
                     <span>{item.name}</span>
                   </div>
@@ -116,7 +121,7 @@ function Navbar() {
               <Link
                 to="/olustur"
                 onClick={() => setIsOpen(false)}
-                className="block w-full text-center bg-[#1e3a5f] text-white px-4 py-3 rounded-lg text-base font-medium mt-4"
+                className="block w-full text-center bg-primary text-white px-4 py-4 rounded-xl text-lg font-bold mt-6 shadow-lg"
               >
                 Sözleşme Oluştur
               </Link>
@@ -131,42 +136,44 @@ function Navbar() {
 function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
+    <footer className="bg-primary text-white pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <div className="col-span-1">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="bg-[#1e3a5f] p-1 rounded-lg">
-                <FileText className="h-5 w-5 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div className="col-span-1 md:col-span-2">
+            <Link to="/" className="flex items-center space-x-3 mb-8">
+              <div className="bg-accent p-2 rounded-xl shadow-lg">
+                <FileText className="h-7 w-7 text-primary" />
               </div>
-              <span className="text-lg font-bold text-[#1e3a5f]">KiraSözleşmesi</span>
+              <span className="text-3xl font-serif font-black text-white tracking-tight">KiraSözleşmesi</span>
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
+            <p className="text-blue-100/60 text-lg leading-relaxed max-w-md font-sans">
               {t('footer.desc')}
             </p>
           </div>
           <div>
-            <h4 className="font-bold text-gray-900 mb-6">{t('footer.links')}</h4>
-            <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link to="/olustur" className="hover:text-[#1e3a5f] transition-colors">{t('nav.create')}</Link></li>
-              <li><Link to="/2026-kira-artisi-hesaplama" className="hover:text-[#1e3a5f] transition-colors">{t('nav.calculator')}</Link></li>
-              <li><Link to="/kira-sozlesmesi-ornegi-pdf" className="hover:text-[#1e3a5f] transition-colors">{t('nav.sample')}</Link></li>
+            <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">{t('footer.links')}</h4>
+            <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/olustur" className="hover:text-accent transition-colors font-bold">{t('nav.create')}</Link></li>
+              <li><Link to="/2026-kira-artisi-hesaplama" className="hover:text-accent transition-colors font-bold">{t('nav.calculator')}</Link></li>
+              <li><Link to="/kira-sozlesmesi-ornegi-pdf" className="hover:text-accent transition-colors font-bold">{t('nav.sample')}</Link></li>
+              <li><Link to="/hakkimizda" className="hover:text-accent transition-colors font-bold">{t('nav.about')}</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-gray-900 mb-6">{t('footer.contact')}</h4>
-            <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link to="/kira-sozlesmesi-nasil-doldurulur" className="hover:text-[#1e3a5f] transition-colors">{t('nav.howTo')}</Link></li>
-              <li><Link to="/gizlilik-politikasi" className="hover:text-[#1e3a5f] transition-colors">KVKK Gizlilik Politikası</Link></li>
-              <li className="text-gray-400">destek@kirasozyardim.com</li>
+            <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
+            <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/kira-sozlesmesi-nasil-doldurulur" className="hover:text-accent transition-colors font-bold">{t('nav.howTo')}</Link></li>
+              <li><Link to="/gizlilik-politikasi" className="hover:text-accent transition-colors font-bold">Gizlilik Politikası</Link></li>
+              <li className="text-blue-100/40 font-mono text-sm">destek@kirasozyardim.com</li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>{t('footer.rights')}</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-[#1e3a5f] transition-colors">Twitter</a>
-            <a href="#" className="hover:text-[#1e3a5f] transition-colors">LinkedIn</a>
+        <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center text-sm text-blue-100/40">
+          <p className="font-bold uppercase tracking-widest leading-loose">{t('footer.rights')}</p>
+          <div className="flex space-x-8 mt-6 md:mt-0">
+            <a href="#" className="hover:text-accent transition-colors font-bold uppercase tracking-widest">Twitter</a>
+            <a href="#" className="hover:text-accent transition-colors font-bold uppercase tracking-widest">LinkedIn</a>
+            <a href="#" className="hover:text-accent transition-colors font-bold uppercase tracking-widest">Instagram</a>
           </div>
         </div>
       </div>
@@ -183,6 +190,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/olustur" element={<GeneratorContainer />} />
+          <Route path="/hakkimizda" element={<About />} />
           <Route path="/kira-sozlesmesi-nasil-doldurulur" element={<HowToFill />} />
           <Route path="/2026-kira-artisi-hesaplama" element={<RentIncreaseCalculator />} />
           <Route path="/kira-sozlesmesi-ornegi-pdf" element={<SamplePDF />} />

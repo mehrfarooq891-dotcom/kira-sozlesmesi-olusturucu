@@ -10,6 +10,7 @@ const resources = {
         calculator: 'Artış Hesaplama',
         howTo: 'Nasıl Doldurulur?',
         sample: 'Örnek PDF',
+        about: 'Hakkımızda',
         start: 'Hemen Başla'
       },
       hero: {
@@ -181,6 +182,19 @@ const resources = {
         sec5Error2: "Kira bedelini elden ödemek.",
         sec5Error3: "Sözleşmenin her sayfasını imzalamamak.",
         ctaBtn: "Hemen Sözleşme Oluşturmaya Başla"
+      },
+      aboutPage: {
+        title: "Hakkımızda",
+        subtitle: "Hukuki süreçleri herkes için anlaşılır ve erişilebilir kılıyoruz.",
+        bio: "Av. Elif Şahin, İstanbul Barosu'na kayıtlı bir gayrimenkul hukuku uzmanıdır. 12 yıldır kira hukuku alanında hem kiracılara hem ev sahiplerine danışmanlık vermektedir. KiraSözleşmesi platformunu, vatandaşların yasal süreçlere kolay erişimi için geliştirmiştir.",
+        expertise: "12 Yıl Hukuk Deneyimi",
+        users: "50.000+ Sözleşme Oluşturuldu",
+        baro: "İstanbul Barosu Üyesi",
+        free: "Ücretsiz Platform",
+        missionTitle: "Misyonumuz",
+        missionText: "Hukuki süreçleri herkes için anlaşılır ve erişilebilir kılmak",
+        disclaimerTitle: "Yasal Uyarı",
+        disclaimerText: "Bu platform hukuki danışmanlık hizmeti vermez. Karmaşık durumlarda avukat desteği alınız."
       }
     }
   },
@@ -191,6 +205,7 @@ const resources = {
         calculator: 'Rent Increase',
         howTo: 'How to Fill?',
         sample: 'Sample PDF',
+        about: 'About Us',
         start: 'Get Started'
       },
       hero: {
@@ -362,6 +377,19 @@ const resources = {
         sec5Error2: "Paying the rent in cash.",
         sec5Error3: "Not signing every page of the contract.",
         ctaBtn: "Start Creating Agreement Now"
+      },
+      aboutPage: {
+        title: "About Us",
+        subtitle: "Making legal processes clear and accessible for everyone.",
+        bio: "Av. Elif Şahin is a real estate law specialist registered with the Istanbul Bar Association. She has been providing consultancy to both tenants and landlords in the field of rental law for 12 years. She developed the RentalAgreement platform for easy access of citizens to legal processes.",
+        expertise: "12 Years of Legal Experience",
+        users: "50,000+ Agreements Created",
+        baro: "Member of Istanbul Bar",
+        free: "Free Platform",
+        missionTitle: "Our Mission",
+        missionText: "Making legal processes clear and accessible for everyone",
+        disclaimerTitle: "Legal Disclaimer",
+        disclaimerText: "This platform does not provide legal consultancy services. Seek lawyer support in complex situations."
       }
     }
   }
