@@ -1,6 +1,6 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe, Users } from 'lucide-react';
+import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe, Users, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Home from './components/Home';
@@ -9,6 +9,7 @@ import HowToFill from './pages/HowToFill';
 import RentIncreaseCalculator from './pages/RentIncreaseCalculator';
 import SamplePDF from './pages/SamplePDF';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -24,11 +25,9 @@ function Navbar() {
   };
 
   const navItems = [
-    { name: t('nav.create'), path: '/olustur', icon: FileText },
-    { name: t('nav.calculator'), path: '/2026-kira-artisi-hesaplama', icon: Calculator },
-    { name: t('nav.howTo'), path: '/kira-sozlesmesi-nasil-doldurulur', icon: HelpCircle },
-    { name: t('nav.sample'), path: '/kira-sozlesmesi-ornegi-pdf', icon: Download },
+    { name: t('nav.home'), path: '/', icon: FileText },
     { name: t('nav.about'), path: '/hakkimizda', icon: Users },
+    { name: t('nav.contact'), path: '/iletisim', icon: Mail },
   ];
 
   return (
@@ -68,13 +67,6 @@ function Navbar() {
               <Globe className="h-4 w-4" />
               <span>{i18n.language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
-
-            <Link
-              to="/olustur"
-              className="ml-4 bg-primary text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-primary/90 hover:scale-[1.02] active:scale-95 transition-all shadow-md"
-            >
-              {t('nav.start')}
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -153,10 +145,10 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">{t('footer.links')}</h4>
             <ul className="space-y-4 text-lg text-blue-100">
-              <li><Link to="/olustur" className="hover:text-accent transition-colors font-bold">{t('nav.create')}</Link></li>
-              <li><Link to="/2026-kira-artisi-hesaplama" className="hover:text-accent transition-colors font-bold">{t('nav.calculator')}</Link></li>
-              <li><Link to="/kira-sozlesmesi-ornegi-pdf" className="hover:text-accent transition-colors font-bold">{t('nav.sample')}</Link></li>
+              <li><Link to="/" className="hover:text-accent transition-colors font-bold">{t('nav.home')}</Link></li>
               <li><Link to="/hakkimizda" className="hover:text-accent transition-colors font-bold">{t('nav.about')}</Link></li>
+              <li><Link to="/iletisim" className="hover:text-accent transition-colors font-bold">{t('nav.contact')}</Link></li>
+              <li><Link to="/olustur" className="hover:text-accent transition-colors font-bold">{t('nav.create')}</Link></li>
             </ul>
           </div>
           <div>
@@ -191,6 +183,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/olustur" element={<GeneratorContainer />} />
           <Route path="/hakkimizda" element={<About />} />
+          <Route path="/iletisim" element={<Contact />} />
           <Route path="/kira-sozlesmesi-nasil-doldurulur" element={<HowToFill />} />
           <Route path="/2026-kira-artisi-hesaplama" element={<RentIncreaseCalculator />} />
           <Route path="/kira-sozlesmesi-ornegi-pdf" element={<SamplePDF />} />

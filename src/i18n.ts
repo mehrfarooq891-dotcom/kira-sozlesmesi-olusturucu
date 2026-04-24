@@ -6,11 +6,13 @@ const resources = {
   tr: {
     translation: {
       nav: {
+        home: 'Ana Sayfa',
         create: 'Sözleşme Oluştur',
         calculator: 'Artış Hesaplama',
         howTo: 'Nasıl Doldurulur?',
         sample: 'Örnek PDF',
         about: 'Hakkımızda',
+        contact: 'İletişim',
         start: 'Hemen Başla'
       },
       hero: {
@@ -184,28 +186,47 @@ const resources = {
         ctaBtn: "Hemen Sözleşme Oluşturmaya Başla"
       },
       aboutPage: {
-        title: "Hakkımızda",
-        subtitle: "Hukuki süreçleri herkes için anlaşılır ve erişilebilir kılıyoruz.",
-        bio: "Av. Elif Şahin, İstanbul Barosu'na kayıtlı bir gayrimenkul hukuku uzmanıdır. 12 yıldır kira hukuku alanında hem kiracılara hem ev sahiplerine danışmanlık vermektedir. KiraSözleşmesi platformunu, vatandaşların yasal süreçlere kolay erişimi için geliştirmiştir.",
-        expertise: "12 Yıl Hukuk Deneyimi",
-        users: "50.000+ Sözleşme Oluşturuldu",
-        baro: "İstanbul Barosu Üyesi",
-        free: "Ücretsiz Platform",
-        missionTitle: "Misyonumuz",
-        missionText: "Hukuki süreçleri herkes için anlaşılır ve erişilebilir kılmak",
-        disclaimerTitle: "Yasal Uyarı",
-        disclaimerText: "Bu platform hukuki danışmanlık hizmeti vermez. Karmaşık durumlarda avukat desteği alınız."
+        heroTitle: "KiraSözleşmesi Hakkında",
+        heroSubtext: "Ücretsiz. Anında. Kayıt Gerektirmez.",
+        whatWeDoTitle: "Ne Yapıyoruz?",
+        whatWeDoText: "KiraSözleşmesi, kira sözleşmesi oluşturmanın en hızlı ve en güvenilir yoludur. Türkiye genelindeki mülk sahipleri ve kiracılar için yasalara %100 uyumlu, profesyonel kontratları saniyeler içinde hazırlarız.",
+        whyBuiltTitle: "Neden Geliştirdik?",
+        whyBuiltText: "Çoğu finansal ve hukuki araç ödeme duvarlarının arkasındadır veya sadece basit bir işlem için kayıt olmanızı ister. Biz, faydalı araçların herkes için ücretsiz ve zahmetsiz olması gerektiğine inanıyoruz.",
+        seo: "KiraSözleşmesi, Türkiye için ücretsiz bir online kira sözleşmesi oluşturucusudur. Kayıt gerektirmeden dilediğiniz zaman kullanın.",
+        card1Title: "100% Ücretsiz",
+        card1Desc: "Gizli ücret yok, abonelik yok, asla.",
+        card2Title: "Kayıt Yok",
+        card2Desc: "Hesap açmaya gerek yok. Verileriniz gizli kalır.",
+        card3Title: "Yerel Çözüm",
+        card3Desc: "Hizmet verdiği ülkenin gerçek koşulları, yerel para birimi ve yerel yasaları için tasarlandı."
+      },
+      contactPage: {
+        title: "Bize Ulaşın",
+        subtitle: "Bir sorunuz veya öneriniz mi var? Sizden haber almayı çok isteriz.",
+        formName: "İsim",
+        formNamePlaceholder: "Adınız Soyadınız",
+        formEmail: "E-posta",
+        formEmailPlaceholder: "eposta@adresiniz.com",
+        formSubject: "Konu",
+        formSubjectPlaceholder: "Size nasıl yardımcı olabiliriz?",
+        formMessage: "Mesaj",
+        formMessagePlaceholder: "Mesajınız...",
+        submit: "Mesaj Gönder",
+        preferEmail: "E-posta mı tercih edersiniz?",
+        seo: "KiraSözleşmesi ekibiyle iletişime geçin — Türkiye için ücretsiz kira sözleşmesi oluşturucu."
       }
     }
   },
   en: {
     translation: {
       nav: {
+        home: 'Home',
         create: 'Create Agreement',
         calculator: 'Rent Increase',
         howTo: 'How to Fill?',
         sample: 'Sample PDF',
         about: 'About Us',
+        contact: 'Contact',
         start: 'Get Started'
       },
       hero: {
@@ -379,17 +400,34 @@ const resources = {
         ctaBtn: "Start Creating Agreement Now"
       },
       aboutPage: {
-        title: "About Us",
-        subtitle: "Making legal processes clear and accessible for everyone.",
-        bio: "Av. Elif Şahin is a real estate law specialist registered with the Istanbul Bar Association. She has been providing consultancy to both tenants and landlords in the field of rental law for 12 years. She developed the RentalAgreement platform for easy access of citizens to legal processes.",
-        expertise: "12 Years of Legal Experience",
-        users: "50,000+ Agreements Created",
-        baro: "Member of Istanbul Bar",
-        free: "Free Platform",
-        missionTitle: "Our Mission",
-        missionText: "Making legal processes clear and accessible for everyone",
-        disclaimerTitle: "Legal Disclaimer",
-        disclaimerText: "This platform does not provide legal consultancy services. Seek lawyer support in complex situations."
+        heroTitle: "About KiraSözleşmesi",
+        heroSubtext: "Free. Instant. No signup required.",
+        whatWeDoTitle: "What We Do",
+        whatWeDoText: "KiraSözleşmesi provides a professional and secure way to generate rental agreements in minutes. We help tenants and landlords in Turkey create legally compliant contracts without any cost or technical complexity.",
+        whyBuiltTitle: "Why We Built This",
+        whyBuiltText: "Most financial tools are locked behind paywalls or require creating an account just to see a number. We believe useful tools should be free and instant for everyone.",
+        seo: "KiraSözleşmesi is a free online rental agreement generator for Turkey. Use it anytime with no registration required.",
+        card1Title: "100% Free",
+        card1Desc: "No hidden fees, no subscriptions, ever.",
+        card2Title: "No Signup",
+        card2Desc: "No account needed. Your data stays private.",
+        card3Title: "Built Local",
+        card3Desc: "Designed for real conditions, local currency, and local laws of the country this tool serves."
+      },
+      contactPage: {
+        title: "Contact Us",
+        subtitle: "Have a question or suggestion? We would love to hear from you.",
+        formName: "Name",
+        formNamePlaceholder: "Your Name",
+        formEmail: "Email",
+        formEmailPlaceholder: "your@email.com",
+        formSubject: "Subject",
+        formSubjectPlaceholder: "How can we help?",
+        formMessage: "Message",
+        formMessagePlaceholder: "Your message...",
+        submit: "Send Message",
+        preferEmail: "Prefer email?",
+        seo: "Contact the team behind KiraSözleşmesi — a free rental agreement generator for Turkey."
       }
     }
   }

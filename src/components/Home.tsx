@@ -260,7 +260,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-12 relative z-10">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent shadow-2xl shrink-0">
                 <img 
-                  src="https://randomuser.me/api/portraits/women/68.jpg" 
+                  src="https://i.postimg.cc/FRs09xPc/Av-Elif-Sahin.png" 
                   alt="Av. Elif Şahin" 
                   className="w-full h-full object-cover"
                 />
