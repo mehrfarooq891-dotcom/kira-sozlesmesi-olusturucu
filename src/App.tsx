@@ -152,11 +152,19 @@ function Footer() {
             </ul>
           </div>
           <div>
+            <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">{t('footer.contact')}</h4>
+            <ul className="space-y-4 text-blue-100">
+              <li className="text-sm font-bold uppercase tracking-tight text-accent">{t('company.name')}</li>
+              <li className="text-sm leading-relaxed opacity-70">{t('company.address')}</li>
+              <li className="text-sm">Tel: {t('company.phone')}</li>
+              <li className="text-blue-100/40 font-mono text-sm">{t('company.email')}</li>
+            </ul>
+          </div>
+          <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
               <li><Link to="/kira-sozlesmesi-nasil-doldurulur" className="hover:text-accent transition-colors font-bold">{t('nav.howTo')}</Link></li>
               <li><Link to="/gizlilik-politikasi" className="hover:text-accent transition-colors font-bold">Gizlilik Politikası</Link></li>
-              <li className="text-blue-100/40 font-mono text-sm">destek@kirasozyardim.com</li>
             </ul>
           </div>
         </div>

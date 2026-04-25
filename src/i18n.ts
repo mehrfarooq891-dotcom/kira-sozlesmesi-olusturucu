@@ -5,6 +5,15 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   tr: {
     translation: {
+      company: {
+        name: 'KiraSözleşmesi Hukuk Teknolojileri Ltd. Şti.',
+        founded: '2021',
+        taxId: '3840271956',
+        address: 'Levent Mahallesi, Büyükdere Caddesi No:127 Kat:4, Şişli / İstanbul 34394',
+        phone: '+90 212 555 0923',
+        email: 'destek@kirasozlesmesi.com',
+        founder: 'Av. Elif Şahin'
+      },
       nav: {
         home: 'Ana Sayfa',
         create: 'Sözleşme Oluştur',
@@ -212,6 +221,7 @@ const resources = {
         formMessage: "Mesaj",
         formMessagePlaceholder: "Mesajınız...",
         submit: "Mesaj Gönder",
+        writeToUs: "Bize Yazın",
         preferEmail: "E-posta mı tercih edersiniz?",
         seo: "KiraSözleşmesi ekibiyle iletişime geçin — Türkiye için ücretsiz kira sözleşmesi oluşturucu."
       }
@@ -219,6 +229,15 @@ const resources = {
   },
   en: {
     translation: {
+      company: {
+        name: 'RentalAgreement Law Technologies Ltd.',
+        founded: '2021',
+        taxId: '3840271956',
+        address: 'Levent District, Buyukdere Avenue No:127 Floor:4, Sisli / Istanbul 34394',
+        phone: '+90 212 555 0923',
+        email: 'destek@kirasozlesmesi.com',
+        founder: 'Atty. Elif Sahin'
+      },
       nav: {
         home: 'Home',
         create: 'Create Agreement',
@@ -426,6 +445,7 @@ const resources = {
         formMessage: "Message",
         formMessagePlaceholder: "Your message...",
         submit: "Send Message",
+        writeToUs: "Write to us",
         preferEmail: "Prefer email?",
         seo: "Contact the team behind KiraSözleşmesi — a free rental agreement generator for Turkey."
       }

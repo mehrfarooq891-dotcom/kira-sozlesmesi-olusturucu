@@ -72,8 +72,8 @@ export default function About() {
               <div className="w-20 h-20 bg-accent/10 rounded-3xl flex items-center justify-center mx-auto mb-8">
                 <Zap className="h-10 w-10 text-accent" />
               </div>
-              <h3 className="text-2xl font-serif font-black text-primary mb-4">100% Free</h3>
-              <p className="text-gray-500 font-sans leading-relaxed">No hidden fees, no subscriptions, ever.</p>
+              <h3 className="text-2xl font-serif font-black text-primary mb-4">{t('aboutPage.card1Title')}</h3>
+              <p className="text-gray-500 font-sans leading-relaxed">{t('aboutPage.card1Desc')}</p>
             </motion.div>
 
             <motion.div 
@@ -83,8 +83,8 @@ export default function About() {
               <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-8">
                 <Lock className="h-10 w-10 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-black text-primary mb-4">No Signup</h3>
-              <p className="text-gray-500 font-sans leading-relaxed">No account needed. Your data stays private.</p>
+              <h3 className="text-2xl font-serif font-black text-primary mb-4">{t('aboutPage.card2Title')}</h3>
+              <p className="text-gray-500 font-sans leading-relaxed">{t('aboutPage.card2Desc')}</p>
             </motion.div>
 
             <motion.div 
@@ -94,15 +94,64 @@ export default function About() {
               <div className="w-20 h-20 bg-accent/10 rounded-3xl flex items-center justify-center mx-auto mb-8">
                 <Globe className="h-10 w-10 text-accent" />
               </div>
-              <h3 className="text-2xl font-serif font-black text-primary mb-4">Built Local</h3>
-              <p className="text-gray-500 font-sans leading-relaxed">Designed for real conditions, local currency, and local laws of the country this tool serves.</p>
+              <h3 className="text-2xl font-serif font-black text-primary mb-4">{t('aboutPage.card3Title')}</h3>
+              <p className="text-gray-500 font-sans leading-relaxed">{t('aboutPage.card3Desc')}</p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Section 5 — Small SEO text */}
-      <footer className="py-12 bg-gray-50 border-t border-gray-100">
+      {/* Section 5 — Profile */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-16">
+            <div className="w-full md:w-1/3">
+              <div className="relative">
+                <div className="w-full aspect-square rounded-[40px] overflow-hidden border-8 border-white shadow-2xl">
+                  <img 
+                    src="https://i.postimg.cc/FRs09xPc/Av-Elif-Sahin.png" 
+                    alt="Av. Elif Şahin" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-3xl flex items-center justify-center shadow-xl">
+                  <ShieldCheck className="h-12 w-12 text-primary" />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <h2 className="text-3xl font-serif font-black text-primary mb-4">{t('company.founder')}</h2>
+              <p className="text-accent font-bold tracking-widest uppercase mb-6">Kurucu & Hukuk Danışmanı</p>
+              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                İstanbul Barosu'na kayıtlı bir gayrimenkul hukuku uzmanıdır. 12 yıldır kira hukuku alanında hem kiracılara hem ev sahiplerine danışmanlık vermektedir. KiraSözleşmesi platformunu, vatandaşların yasal süreçlere kolay erişimi için geliştirmiştir.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-white rounded-2xl border border-gray-100">
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Şirket</p>
+                  <p className="text-primary font-bold">{t('company.name')}</p>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-gray-100">
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Kuruluş</p>
+                  <p className="text-primary font-bold">{t('company.founded')}</p>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-gray-100">
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Vergi No</p>
+                  <p className="text-primary font-bold">{t('company.taxId')}</p>
+                </div>
+                <div className="p-4 bg-white rounded-2xl border border-gray-100">
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Email</p>
+                  <p className="text-primary font-bold">{t('company.email')}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Small SEO text */}
+      <footer className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400 text-sm font-medium tracking-wide">
             {t('aboutPage.seo', 'KiraSözleşmesi is a free online rental agreement generator for Turkey. Use it anytime with no registration required.')}
