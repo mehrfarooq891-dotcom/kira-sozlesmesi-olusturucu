@@ -1,6 +1,6 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe, Users, Mail } from 'lucide-react';
+import { FileText, Calculator, HelpCircle, ShieldCheck, Menu, X, Download, CheckCircle2, Globe, Users, Mail, BookOpen } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Home from './components/Home';
@@ -10,6 +10,7 @@ import RentIncreaseCalculator from './pages/RentIncreaseCalculator';
 import SamplePDF from './pages/SamplePDF';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BlogGuide from './pages/BlogGuide';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -27,6 +28,7 @@ function Navbar() {
   const navItems = [
     { name: t('nav.home'), path: '/', icon: FileText },
     { name: t('nav.about'), path: '/hakkimizda', icon: Users },
+    { name: t('nav.blog'), path: '/kira-sozlesmesi-rehberi', icon: BookOpen },
     { name: t('nav.contact'), path: '/iletisim', icon: Mail },
   ];
 
@@ -163,6 +165,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/kira-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Rehberi</Link></li>
               <li><Link to="/kira-sozlesmesi-nasil-doldurulur" className="hover:text-accent transition-colors font-bold">{t('nav.howTo')}</Link></li>
               <li><Link to="/gizlilik-politikasi" className="hover:text-accent transition-colors font-bold">Gizlilik Politikası</Link></li>
             </ul>
@@ -195,6 +198,7 @@ export default function App() {
           <Route path="/kira-sozlesmesi-nasil-doldurulur" element={<HowToFill />} />
           <Route path="/2026-kira-artisi-hesaplama" element={<RentIncreaseCalculator />} />
           <Route path="/kira-sozlesmesi-ornegi-pdf" element={<SamplePDF />} />
+          <Route path="/kira-sozlesmesi-rehberi" element={<BlogGuide />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

@@ -20,9 +20,14 @@ const resources = {
         calculator: 'Artış Hesaplama',
         howTo: 'Nasıl Doldurulur?',
         sample: 'Örnek PDF',
+        blog: 'Rehber',
         about: 'Hakkımızda',
         contact: 'İletişim',
         start: 'Hemen Başla'
+      },
+      blogPage: {
+        title: "Kira Sözleşmesi Nasıl Yazılır? 2026 Güncel Rehber",
+        seoDesc: "Kira sözleşmesi nasıl yazılır sorusunun kapsamlı cevabı. 2026 güncel mevzuat, zorunlu maddeler, haklar ve PDF indirme seçenekleri bu rehberde.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
