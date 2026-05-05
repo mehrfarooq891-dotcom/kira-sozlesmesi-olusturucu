@@ -28,6 +28,8 @@ const resources = {
       blogPage: {
         title: "Kira Sözleşmesi Nasıl Yazılır? 2026 Güncel Rehber",
         seoDesc: "Kira sözleşmesi nasıl yazılır sorusunun kapsamlı cevabı. 2026 güncel mevzuat, zorunlu maddeler, haklar ve PDF indirme seçenekleri bu rehberde.",
+        rentIncreaseTitle: "Kira Artış Oranı 2026 — TÜFE'ye Göre Hesaplama Rehberi",
+        rentIncreaseSeoDesc: "2026 kira artış oranı nasıl hesaplanır? Yasal TÜFE sınırı, hesaplama formülü ve güncel örneklerle kira artışı hesaplama rehberi.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

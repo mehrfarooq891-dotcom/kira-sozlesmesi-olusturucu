@@ -11,6 +11,7 @@ import SamplePDF from './pages/SamplePDF';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import BlogGuide from './pages/BlogGuide';
+import RentIncreaseBlog from './pages/RentIncreaseBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -165,6 +166,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/2026-kira-artis-orani-rehberi" className="hover:text-accent transition-colors font-bold">Kira Artış Oranı 2026</Link></li>
               <li><Link to="/kira-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Rehberi</Link></li>
               <li><Link to="/kira-sozlesmesi-nasil-doldurulur" className="hover:text-accent transition-colors font-bold">{t('nav.howTo')}</Link></li>
               <li><Link to="/gizlilik-politikasi" className="hover:text-accent transition-colors font-bold">Gizlilik Politikası</Link></li>
@@ -199,6 +201,7 @@ export default function App() {
           <Route path="/2026-kira-artisi-hesaplama" element={<RentIncreaseCalculator />} />
           <Route path="/kira-sozlesmesi-ornegi-pdf" element={<SamplePDF />} />
           <Route path="/kira-sozlesmesi-rehberi" element={<BlogGuide />} />
+          <Route path="/2026-kira-artis-orani-rehberi" element={<RentIncreaseBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>
