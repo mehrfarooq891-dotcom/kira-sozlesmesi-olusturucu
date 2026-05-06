@@ -21,6 +21,7 @@ const resources = {
         howTo: 'Nasıl Doldurulur?',
         sample: 'Örnek PDF',
         blog: 'Rehber',
+        blogMain: 'Blog',
         about: 'Hakkımızda',
         contact: 'İletişim',
         start: 'Hemen Başla'
@@ -30,6 +31,8 @@ const resources = {
         seoDesc: "Kira sözleşmesi nasıl yazılır sorusunun kapsamlı cevabı. 2026 güncel mevzuat, zorunlu maddeler, haklar ve PDF indirme seçenekleri bu rehberde.",
         rentIncreaseTitle: "Kira Artış Oranı 2026 — TÜFE'ye Göre Hesaplama Rehberi",
         rentIncreaseSeoDesc: "2026 kira artış oranı nasıl hesaplanır? Yasal TÜFE sınırı, hesaplama formülü ve güncel örneklerle kira artışı hesaplama rehberi.",
+        depositTitle: "Depozito Ne Kadar Olabilir? Yasal Sınırlar ve Haklar",
+        depositSeoDesc: "Depozito ne kadar olabilir? 3 aylık kira sınırı, iade şartları ve kiracı hakları hakkında 2026 güncel yasal rehber.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
@@ -251,6 +254,8 @@ const resources = {
         calculator: 'Rent Increase',
         howTo: 'How to Fill?',
         sample: 'Sample PDF',
+        blog: 'Guide',
+        blogMain: 'Blog',
         about: 'About Us',
         contact: 'Contact',
         start: 'Get Started'
