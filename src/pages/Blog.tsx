@@ -27,6 +27,15 @@ export default function Blog() {
       readTime: "7 Dakika"
     },
     {
+      title: "Kiracı Hakları 2026 — Bilmeniz Gereken Her Şey",
+      excerpt: "Tahliye şartları, kira artışı yasal sınırı ve depozito iadesi gibi en kritik kiracı hakları rehberi.",
+      image: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "07 Mayıs 2026",
+      path: "/kiraci-haklari-2026-rehberi",
+      category: "Hukuk",
+      readTime: "8 Dakika"
+    },
+    {
       title: "Depozito Ne Kadar Olabilir? Yasal Sınırlar ve Haklar",
       excerpt: "Depozito ne kadar olabilir? 3 aylık kira sınırı, iade şartları ve kiracı hakları.",
       image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

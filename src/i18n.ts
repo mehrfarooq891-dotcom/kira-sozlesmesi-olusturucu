@@ -33,6 +33,8 @@ const resources = {
         rentIncreaseSeoDesc: "2026 kira artış oranı nasıl hesaplanır? Yasal TÜFE sınırı, hesaplama formülü ve güncel örneklerle kira artışı hesaplama rehberi.",
         depositTitle: "Depozito Ne Kadar Olabilir? Yasal Sınırlar ve Haklar",
         depositSeoDesc: "Depozito ne kadar olabilir? 3 aylık kira sınırı, iade şartları ve kiracı hakları hakkında 2026 güncel yasal rehber.",
+        tenantRightsTitle: "Kiracı Hakları 2026 — Bilmeniz Gereken Her Şey",
+        tenantRightsSeoDesc: "2026 yılı kiracı hakları rehberi. Tahliye şartları, kira artışı yasal sınırı, depozito iadesi ve kiracıları koruyan kanuni düzenlemeler.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
