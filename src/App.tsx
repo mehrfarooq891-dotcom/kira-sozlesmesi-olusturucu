@@ -15,6 +15,7 @@ import BlogGuide from './pages/BlogGuide';
 import RentIncreaseBlog from './pages/RentIncreaseBlog';
 import DepositGuide from './pages/DepositGuide';
 import TenantRightsBlog from './pages/TenantRightsBlog';
+import EvictionGuide from './pages/EvictionGuide';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -170,6 +171,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/ev-sahibi-kiraci-cikarma-rehberi" className="hover:text-accent transition-colors font-bold">Ev Sahibi Kiracı Çıkarma</Link></li>
               <li><Link to="/kiraci-haklari-2026-rehberi" className="hover:text-accent transition-colors font-bold">Kiracı Hakları 2026</Link></li>
               <li><Link to="/depozito-ne-kadar-olmali-rehberi" className="hover:text-accent transition-colors font-bold">Depozito Ne Kadar Olmalı?</Link></li>
               <li><Link to="/2026-kira-artis-orani-rehberi" className="hover:text-accent transition-colors font-bold">Kira Artış Oranı 2026</Link></li>
@@ -211,6 +213,7 @@ export default function App() {
           <Route path="/2026-kira-artis-orani-rehberi" element={<RentIncreaseBlog />} />
           <Route path="/depozito-ne-kadar-olmali-rehberi" element={<DepositGuide />} />
           <Route path="/kiraci-haklari-2026-rehberi" element={<TenantRightsBlog />} />
+          <Route path="/ev-sahibi-kiraci-cikarma-rehberi" element={<EvictionGuide />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

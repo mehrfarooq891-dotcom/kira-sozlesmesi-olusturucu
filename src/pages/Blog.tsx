@@ -36,6 +36,15 @@ export default function Blog() {
       readTime: "8 Dakika"
     },
     {
+      title: "Ev Sahibi Kiracıyı Ne Zaman Çıkarabilir? Yasal Şartlar",
+      excerpt: "Ev sahibi kiracıyı ne zaman çıkarabilir? Yasal tahliye sebepleri, ihtar süreci, Sulh Hukuk Mahkemesi yolları ve kiracı korumaları.",
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "09 Mayıs 2026",
+      path: "/ev-sahibi-kiraci-cikarma-rehberi",
+      category: "Tahliye",
+      readTime: "10 Dakika"
+    },
+    {
       title: "Depozito Ne Kadar Olabilir? Yasal Sınırlar ve Haklar",
       excerpt: "Depozito ne kadar olabilir? 3 aylık kira sınırı, iade şartları ve kiracı hakları.",
       image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

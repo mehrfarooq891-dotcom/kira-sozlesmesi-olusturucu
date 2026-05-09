@@ -35,6 +35,8 @@ const resources = {
         depositSeoDesc: "Depozito ne kadar olabilir? 3 aylık kira sınırı, iade şartları ve kiracı hakları hakkında 2026 güncel yasal rehber.",
         tenantRightsTitle: "Kiracı Hakları 2026 — Bilmeniz Gereken Her Şey",
         tenantRightsSeoDesc: "2026 yılı kiracı hakları rehberi. Tahliye şartları, kira artışı yasal sınırı, depozito iadesi ve kiracıları koruyan kanuni düzenlemeler.",
+        evictionTitle: "Ev Sahibi Kiracıyı Ne Zaman Çıkarabilir? Yasal Şartlar",
+        evictionSeoDesc: "Ev sahibi kiracıyı ne zaman çıkarabilir? 2026 güncel yasal tahliye sebepleri, ihtar süreci, Sulh Hukuk Mahkemesi yolları ve kiracıyı koruyan yasal güvenceler bu rehberde.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
