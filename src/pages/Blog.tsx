@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesi Noter'de Mi Yapılmalıdır?",
+      excerpt: "Kira sözleşmesinin noter huzurunda yapılması zorunlu mudur? Adi yazılı sözleşme geçerliliği, noter onayının avantajları ve yasal şartlar.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "10 Mayıs 2026",
+      path: "/kira-sozlesmesi-noter-rehberi",
+      category: "Mevzuat",
+      readTime: "9 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Nasıl Yazılır? 2026 Güncel Rehber",
       excerpt: "Zorunlu maddeler, tarafların yasal hakları ve noter onayına dair bilinmesi gereken her şey.",
       image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

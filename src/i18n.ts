@@ -37,6 +37,8 @@ const resources = {
         tenantRightsSeoDesc: "2026 yılı kiracı hakları rehberi. Tahliye şartları, kira artışı yasal sınırı, depozito iadesi ve kiracıları koruyan kanuni düzenlemeler.",
         evictionTitle: "Ev Sahibi Kiracıyı Ne Zaman Çıkarabilir? Yasal Şartlar",
         evictionSeoDesc: "Ev sahibi kiracıyı ne zaman çıkarabilir? 2026 güncel yasal tahliye sebepleri, ihtar süreci, Sulh Hukuk Mahkemesi yolları ve kiracıyı koruyan yasal güvenceler bu rehberde.",
+        notaryContractTitle: "Kira Sözleşmesi Noter'de Mi Yapılmalıdır?",
+        notaryContractSeoDesc: "Kira sözleşmesi noter huzurunda mı yapılmalıdır? Adi yazılı sözleşme yasal geçerliliği, noter onayının avantajları, maliyetler ve 2026 güncel yasal haklar bu kapsamlı rehberde.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
