@@ -18,6 +18,15 @@ export default function Blog() {
       readTime: "9 Dakika"
     },
     {
+      title: "Tahliye Taahhütnamesi Nedir ve Nasıl Düzenlenir?",
+      excerpt: "Tahliye taahhütnamesi nedir, ne zaman gereklidir ve nasıl doldurulur? 2026 yasal geçerlilik şartları ve Yargıtay kararları.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "12 Mayıs 2026",
+      path: "/tahliye-taahhutnamesi-rehberi",
+      category: "Mevzuat",
+      readTime: "9 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Nasıl Yazılır? 2026 Güncel Rehber",
       excerpt: "Zorunlu maddeler, tarafların yasal hakları ve noter onayına dair bilinmesi gereken her şey.",
       image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

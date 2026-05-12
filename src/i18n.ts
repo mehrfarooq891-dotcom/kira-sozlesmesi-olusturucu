@@ -39,6 +39,8 @@ const resources = {
         evictionSeoDesc: "Ev sahibi kiracıyı ne zaman çıkarabilir? 2026 güncel yasal tahliye sebepleri, ihtar süreci, Sulh Hukuk Mahkemesi yolları ve kiracıyı koruyan yasal güvenceler bu rehberde.",
         notaryContractTitle: "Kira Sözleşmesi Noter'de Mi Yapılmalıdır?",
         notaryContractSeoDesc: "Kira sözleşmesi noter huzurunda mı yapılmalıdır? Adi yazılı sözleşme yasal geçerliliği, noter onayının avantajları, maliyetler ve 2026 güncel yasal haklar bu kapsamlı rehberde.",
+        evictionPromiseTitle: "Tahliye Taahhütnamesi Nedir ve Nasıl Düzenlenir?",
+        evictionPromiseSeoDesc: "Tahliye taahhütnamesi nedir, ne zaman gereklidir ve nasıl doldurulur? 2026 güncel yasal geçerlilik şartları, imza süreçleri ve Yargıtay kararlarıyla tahliye taahhütnamesi rehberi.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
