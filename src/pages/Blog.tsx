@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesi Ne Zaman Yenilenmiş Sayılır?",
+      excerpt: "Kira sözleşmesi ne zaman yenilenmiş sayılır? Güncel otomatik uzama kuralları, kiracının fesih bildirim süresi ve sözleşme sona erdirme şartları.",
+      image: "https://images.unsplash.com/photo-1505664194779-8bebcb95c557?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "13 Mayıs 2026",
+      path: "/kira-sozlesmesi-yenileme-rehberi",
+      category: "Mevzuat",
+      readTime: "10 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Noter'de Mi Yapılmalıdır?",
       excerpt: "Kira sözleşmesinin noter huzurunda yapılması zorunlu mudur? Adi yazılı sözleşme geçerliliği, noter onayının avantajları ve yasal şartlar.",
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

@@ -41,6 +41,8 @@ const resources = {
         notaryContractSeoDesc: "Kira sözleşmesi noter huzurunda mı yapılmalıdır? Adi yazılı sözleşme yasal geçerliliği, noter onayının avantajları, maliyetler ve 2026 güncel yasal haklar bu kapsamlı rehberde.",
         evictionPromiseTitle: "Tahliye Taahhütnamesi Nedir ve Nasıl Düzenlenir?",
         evictionPromiseSeoDesc: "Tahliye taahhütnamesi nedir, ne zaman gereklidir ve nasıl doldurulur? 2026 güncel yasal geçerlilik şartları, imza süreçleri ve Yargıtay kararlarıyla tahliye taahhütnamesi rehberi.",
+        rentRenewalTitle: "Kira Sözleşmesi Ne Zaman Yenilenmiş Sayılır?",
+        rentRenewalSeoDesc: "Kira sözleşmesi ne zaman yenilenmiş sayılır? Güncel otomatik uzama kuralları, kiracının fesih bildirim süresi, sözleşme sona erdirme şartları ve 2026 yasal hakları.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
