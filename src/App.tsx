@@ -19,6 +19,7 @@ import EvictionGuide from './pages/EvictionGuide';
 import NotaryContractBlog from './pages/NotaryContractBlog';
 import EvictionPromiseBlog from './pages/EvictionPromiseBlog';
 import RentRenewalBlog from './pages/RentRenewalBlog';
+import DuesResponsibilityBlog from './pages/DuesResponsibilityBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -174,6 +175,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/aidat-kiraci-ev-sahibi-rehberi" className="hover:text-accent transition-colors font-bold">Aidat Kiracı Ev Sahibi</Link></li>
               <li><Link to="/kira-sozlesmesi-yenileme-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Yenileme</Link></li>
               <li><Link to="/tahliye-taahhutnamesi-rehberi" className="hover:text-accent transition-colors font-bold">Tahliye Taahhütnamesi</Link></li>
               <li><Link to="/kira-sozlesmesi-noter-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Noter</Link></li>
@@ -223,6 +225,7 @@ export default function App() {
           <Route path="/kira-sozlesmesi-noter-rehberi" element={<NotaryContractBlog />} />
           <Route path="/tahliye-taahhutnamesi-rehberi" element={<EvictionPromiseBlog />} />
           <Route path="/kira-sozlesmesi-yenileme-rehberi" element={<RentRenewalBlog />} />
+          <Route path="/aidat-kiraci-ev-sahibi-rehberi" element={<DuesResponsibilityBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

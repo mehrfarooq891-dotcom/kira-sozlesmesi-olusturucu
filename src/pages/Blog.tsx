@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Aidatı Kim Öder? Kiracı mı Ev Sahibi mi?",
+      excerpt: "Konut ve işyeri kira ilişkilerinde apartman aidatını kim öder? Kiracının yasal sorumlulukları, ev sahibinin ödemekle yükümlü olduğu demirbaş giderleri ve 2026 Kat Mülkiyeti Kanunu kuralları.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "14 Mayıs 2026",
+      path: "/aidat-kiraci-ev-sahibi-rehberi",
+      category: "Giderler",
+      readTime: "11 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Ne Zaman Yenilenmiş Sayılır?",
       excerpt: "Kira sözleşmesi ne zaman yenilenmiş sayılır? Güncel otomatik uzama kuralları, kiracının fesih bildirim süresi ve sözleşme sona erdirme şartları.",
       image: "https://images.unsplash.com/photo-1505664194779-8bebcb95c557?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

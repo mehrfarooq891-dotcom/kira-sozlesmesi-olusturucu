@@ -43,6 +43,8 @@ const resources = {
         evictionPromiseSeoDesc: "Tahliye taahhütnamesi nedir, ne zaman gereklidir ve nasıl doldurulur? 2026 güncel yasal geçerlilik şartları, imza süreçleri ve Yargıtay kararlarıyla tahliye taahhütnamesi rehberi.",
         rentRenewalTitle: "Kira Sözleşmesi Ne Zaman Yenilenmiş Sayılır?",
         rentRenewalSeoDesc: "Kira sözleşmesi ne zaman yenilenmiş sayılır? Güncel otomatik uzama kuralları, kiracının fesih bildirim süresi, sözleşme sona erdirme şartları ve 2026 yasal hakları.",
+        duesResponsibilityTitle: "Aidatı Kim Öder? Kiracı mı Ev Sahibi mi?",
+        duesResponsibilitySeoDesc: "Kira ilişkisinde aidatı kim öder? Kiracı mı ev sahibi mi? Yasal düzenlemeler, aidat türleri, demirbaş giderleri, işletme giderleri ve sözleşmenin önemi burada.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
