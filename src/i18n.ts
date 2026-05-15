@@ -45,6 +45,8 @@ const resources = {
         rentRenewalSeoDesc: "Kira sözleşmesi ne zaman yenilenmiş sayılır? Güncel otomatik uzama kuralları, kiracının fesih bildirim süresi, sözleşme sona erdirme şartları ve 2026 yasal hakları.",
         duesResponsibilityTitle: "Aidatı Kim Öder? Kiracı mı Ev Sahibi mi?",
         duesResponsibilitySeoDesc: "Kira ilişkisinde aidatı kim öder? Kiracı mı ev sahibi mi? Yasal düzenlemeler, aidat türleri, demirbaş giderleri, işletme giderleri ve sözleşmenin önemi burada.",
+        stampDutyTitle: "Damga Vergisi Nedir? Kira Sözleşmesinde Hesaplama",
+        stampDutySeoDesc: "Kira sözleşmesinde damga vergisi nedir, kim tarafından ve nasıl ödenir? 2026 güncel damga vergisi oranı, istisnalar ve detaylı hesaplama örnekleri.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

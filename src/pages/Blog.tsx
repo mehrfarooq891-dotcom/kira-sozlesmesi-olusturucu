@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Damga Vergisi Nedir? Kira Sözleşmesinde Hesaplama",
+      excerpt: "Kira sözleşmesinde damga vergisi nedir, kim tarafından ödenir? 2026 güncel damga vergisi oranı, istisnaları, muafiyetleri ve adım adım hesaplama örnekleri.",
+      image: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "15 Mayıs 2026",
+      path: "/damga-vergisi-kira-hesaplama",
+      category: "Vergi",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Aidatı Kim Öder? Kiracı mı Ev Sahibi mi?",
       excerpt: "Konut ve işyeri kira ilişkilerinde apartman aidatını kim öder? Kiracının yasal sorumlulukları, ev sahibinin ödemekle yükümlü olduğu demirbaş giderleri ve 2026 Kat Mülkiyeti Kanunu kuralları.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
