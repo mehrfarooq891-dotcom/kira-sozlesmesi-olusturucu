@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "İşyeri Kira Sözleşmesi — Konut Kirasından Farkları",
+      excerpt: "İşyeri kira sözleşmesi ile konut kirası arasındaki temel farklar. 2026 yasal mevzuat, stopaj vergisi, kira artış oranları ve tahliye şartları rehberi.",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "18 Mayıs 2026",
+      path: "/isyeri-kira-sozlesmesi-rehberi",
+      category: "İşyeri",
+      readTime: "14 Dakika"
+    },
+    {
       title: "Damga Vergisi Nedir? Kira Sözleşmesinde Hesaplama",
       excerpt: "Kira sözleşmesinde damga vergisi nedir, kim tarafından ödenir? 2026 güncel damga vergisi oranı, istisnaları, muafiyetleri ve adım adım hesaplama örnekleri.",
       image: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
