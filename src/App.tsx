@@ -22,6 +22,7 @@ import RentRenewalBlog from './pages/RentRenewalBlog';
 import DuesResponsibilityBlog from './pages/DuesResponsibilityBlog';
 import StampDutyBlog from './pages/StampDutyBlog';
 import CommercialRentBlog from './pages/CommercialRentBlog';
+import TenMustMaddelerBlog from './pages/TenMustMaddelerBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -177,6 +178,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/kira-sozlesmesinde-olmasi-gereken-maddeler" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Maddeleri</Link></li>
               <li><Link to="/isyeri-kira-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold">İşyeri Kira Sözleşmesi</Link></li>
               <li><Link to="/damga-vergisi-kira-hesaplama" className="hover:text-accent transition-colors font-bold">Damga Vergisi Kira</Link></li>
               <li><Link to="/aidat-kiraci-ev-sahibi-rehberi" className="hover:text-accent transition-colors font-bold">Aidat Kiracı Ev Sahibi</Link></li>
@@ -232,6 +234,7 @@ export default function App() {
           <Route path="/aidat-kiraci-ev-sahibi-rehberi" element={<DuesResponsibilityBlog />} />
           <Route path="/damga-vergisi-kira-hesaplama" element={<StampDutyBlog />} />
           <Route path="/isyeri-kira-sozlesmesi-rehberi" element={<CommercialRentBlog />} />
+          <Route path="/kira-sozlesmesinde-olmasi-gereken-maddeler" element={<TenMustMaddelerBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

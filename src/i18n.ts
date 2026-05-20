@@ -49,6 +49,8 @@ const resources = {
         stampDutySeoDesc: "Kira sözleşmesinde damga vergisi nedir, kim tarafından ve nasıl ödenir? 2026 güncel damga vergisi oranı, istisnalar ve detaylı hesaplama örnekleri.",
         commercialRentTitle: "İşyeri Kira Sözleşmesi — Konut Kirasından Farkları",
         commercialRentSeoDesc: "İşyeri kira sözleşmesi ile konut kirası arasındaki temel farklar. 2026 yasal mevzuat, stopaj vergisi, kira artış oranları ve tahliye şartları rehberi.",
+        leaseTermsTitle: "Kira Sözleşmesinde Olması Gereken 10 Madde",
+        leaseTermsSeoDesc: "Kira sözleşmesi maddeleri nelerdir? Kira sözleşmesinde bulunması gereken zorunlu ve koruyucu 10 madde, örnek taslak, 2026 güncel yasal mevzuat rehberi.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

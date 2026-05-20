@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesinde Olması Gereken 10 Madde",
+      excerpt: "Kira sözleşmesi maddeleri nelerdir? Kira sözleşmesinde bulunması gereken zorunlu, yasal ve her iki tarafı koruyucu altın değerinde 10 madde ve örnek sözleşme taslağı.",
+      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "20 Mayıs 2026",
+      path: "/kira-sozlesmesinde-olmasi-gereken-maddeler",
+      category: "Rehber",
+      readTime: "12 Dakika"
+    },
+    {
       title: "İşyeri Kira Sözleşmesi — Konut Kirasından Farkları",
       excerpt: "İşyeri kira sözleşmesi ile konut kirası arasındaki temel farklar. 2026 yasal mevzuat, stopaj vergisi, kira artış oranları ve tahliye şartları rehberi.",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
