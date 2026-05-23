@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Borcunu Ödemeyen Kiracıya Ne Yapılır?",
+      excerpt: "Kira borcunu ödemeyen kiracıya karşı uygulanacak yasal süreç adımları. Haklı ihtarname koşulları, icra takibi başlatma, tahliye davası süreleri ve 2026 en son mevzuat kural adımları.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "23 Mayıs 2026",
+      path: "/kira-borcunu-odemeyen-kiraci",
+      category: "Hukuk",
+      readTime: "15 Dakika"
+    },
+    {
       title: "Kira Sözleşmesinde Olması Gereken 10 Madde",
       excerpt: "Kira sözleşmesi maddeleri nelerdir? Kira sözleşmesinde bulunması gereken zorunlu, yasal ve her iki tarafı koruyucu altın değerinde 10 madde ve örnek sözleşme taslağı.",
       image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
