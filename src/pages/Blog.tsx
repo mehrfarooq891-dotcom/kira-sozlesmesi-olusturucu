@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesi Feshi Nasıl Yapılır?",
+      excerpt: "Kira sözleşmesinin feshinde dikkat edilmesi gereken yasal süreçler, bildirim süreleri ve haklı sebepler. 2026 Borçlar Kanunu uyumlu örnek fesih ihtarnamesi dahildir.",
+      image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "24 Mayıs 2026",
+      path: "/kira-sozlesmesi-feshi-rehberi",
+      category: "Rehber",
+      readTime: "13 Dakika"
+    },
+    {
       title: "Kira Borcunu Ödemeyen Kiracıya Ne Yapılır?",
       excerpt: "Kira borcunu ödemeyen kiracıya karşı uygulanacak yasal süreç adımları. Haklı ihtarname koşulları, icra takibi başlatma, tahliye davası süreleri ve 2026 en son mevzuat kural adımları.",
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

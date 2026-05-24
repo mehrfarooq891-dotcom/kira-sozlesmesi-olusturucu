@@ -53,6 +53,8 @@ const resources = {
         leaseTermsSeoDesc: "Kira sözleşmesi maddeleri nelerdir? Kira sözleşmesinde bulunması gereken zorunlu ve koruyucu 10 madde, örnek taslak, 2026 güncel yasal mevzuat rehberi.",
         unpaidRentTitle: "Kira Borcunu Ödemeyen Kiracıya Ne Yapılır?",
         unpaidRentSeoDesc: "Kira borcunu ödemeyen kiracıya karşı uygulanacak yasal süreç adımları. İhtarname, icra takibi, tahliye davası ve 2026 güncel yasa kuralları rehberimizde.",
+        leaseTerminationTitle: "Kira Sözleşmesi Feshi Nasıl Yapılır?",
+        leaseTerminationSeoDesc: "Kira sözleşmesi feshi yolları, yasal fesih sebepleri, haklı ihtarname usulü ve bildirim süreleri. 2026 güncel Borçlar Kanunu kuralları ve örnek ihtar taslağı.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
