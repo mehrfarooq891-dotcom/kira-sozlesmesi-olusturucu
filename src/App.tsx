@@ -25,6 +25,7 @@ import CommercialRentBlog from './pages/CommercialRentBlog';
 import TenMustMaddelerBlog from './pages/TenMustMaddelerBlog';
 import UnpaidRentBlog from './pages/UnpaidRentBlog';
 import LeaseTerminationBlog from './pages/LeaseTerminationBlog';
+import HomeRentalTipsBlog from './pages/HomeRentalTipsBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -180,6 +181,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/ev-kiralarken-dikkat-edilmesi-gerekenler" className="hover:text-accent transition-colors font-bold">Ev Kiralarken Dikkat Edilecekler</Link></li>
               <li><Link to="/kira-sozlesmesi-feshi-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Feshi</Link></li>
               <li><Link to="/kira-borcunu-odemeyen-kiraci" className="hover:text-accent transition-colors font-bold">Kira Borcunu Ödemeyen Kiracı</Link></li>
               <li><Link to="/kira-sozlesmesinde-olmasi-gereken-maddeler" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesi Maddeleri</Link></li>
@@ -241,6 +243,7 @@ export default function App() {
           <Route path="/kira-sozlesmesinde-olmasi-gereken-maddeler" element={<TenMustMaddelerBlog />} />
           <Route path="/kira-borcunu-odemeyen-kiraci" element={<UnpaidRentBlog />} />
           <Route path="/kira-sozlesmesi-feshi-rehberi" element={<LeaseTerminationBlog />} />
+          <Route path="/ev-kiralarken-dikkat-edilmesi-gerekenler" element={<HomeRentalTipsBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

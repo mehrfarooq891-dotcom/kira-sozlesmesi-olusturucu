@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Ev Kiralarken Dikkat Edilmesi Gereken 10 Şey",
+      excerpt: "Ev kiralama dikkat rehberi. Ev kiralarken mutlaka bilmeniz gereken 10 altın kural: Sözleşme incelemesi, depozito kuralları, aidat ayrımı, tapu kontrolü ve hasar tespiti yolları.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "27 Mayıs 2026",
+      path: "/ev-kiralarken-dikkat-edilmesi-gerekenler",
+      category: "Rehber",
+      readTime: "14 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Feshi Nasıl Yapılır?",
       excerpt: "Kira sözleşmesinin feshinde dikkat edilmesi gereken yasal süreçler, bildirim süreleri ve haklı sebepler. 2026 Borçlar Kanunu uyumlu örnek fesih ihtarnamesi dahildir.",
       image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
