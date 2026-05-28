@@ -57,6 +57,8 @@ const resources = {
         leaseTerminationSeoDesc: "Kira sözleşmesi feshi yolları, yasal fesih sebepleri, haklı ihtarname usulü ve bildirim süreleri. 2026 güncel Borçlar Kanunu kuralları ve örnek ihtar taslağı.",
         homeRentalTipsTitle: "Ev Kiralarken Dikkat Edilmesi Gereken 10 Şey",
         homeRentalTipsSeoDesc: "Ev kiralama dikkat rehberi. Ev kiralarken dikkat edilmesi gereken 10 şey: Sözleşme ve tapu kontrolü, depozito iade şartları, aidat ayrımı ve hasar tespiti detayları.",
+        rentalTaxTitle: "Kira Geliri Vergisi 2026 — Ev Sahibi Ne Kadar Vergi Öder?",
+        rentalTaxSeoDesc: "Kira geliri vergisi 2026 yılı güncel rehberi. Konut ve işyeri kira geliri istisna tutarı, vergi dilimleri, beyanname verme süresi ve detaylı vergi hesaplama örnekleri.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

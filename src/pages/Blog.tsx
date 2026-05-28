@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Geliri Vergisi 2026 — Ev Sahibi Ne Kadar Vergi Öder?",
+      excerpt: "Kira geliri vergisi 2026 rehberi. Konut ve işyeri kira geliri istisna tutarları, vergi dilimleri oranları, beyanname verme koşulları ve pratik hesaplama örnekleri.",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "28 Mayıs 2026",
+      path: "/kira-geliri-vergisi-2026-rehberi",
+      category: "Vergi",
+      readTime: "15 Dakika"
+    },
+    {
       title: "Ev Kiralarken Dikkat Edilmesi Gereken 10 Şey",
       excerpt: "Ev kiralama dikkat rehberi. Ev kiralarken mutlaka bilmeniz gereken 10 altın kural: Sözleşme incelemesi, depozito kuralları, aidat ayrımı, tapu kontrolü ve hasar tespiti yolları.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
