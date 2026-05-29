@@ -59,6 +59,8 @@ const resources = {
         homeRentalTipsSeoDesc: "Ev kiralama dikkat rehberi. Ev kiralarken dikkat edilmesi gereken 10 şey: Sözleşme ve tapu kontrolü, depozito iade şartları, aidat ayrımı ve hasar tespiti detayları.",
         rentalTaxTitle: "Kira Geliri Vergisi 2026 — Ev Sahibi Ne Kadar Vergi Öder?",
         rentalTaxSeoDesc: "Kira geliri vergisi 2026 yılı güncel rehberi. Konut ve işyeri kira geliri istisna tutarı, vergi dilimleri, beyanname verme süresi ve detaylı vergi hesaplama örnekleri.",
+        tenantHandoverTitle: "Kiracı Evi Teslim Ederken Nelere Dikkat Etmeli?",
+        tenantHandoverSeoDesc: "Kiracı ev teslimi rehberi. Kiracı evi teslim ederken nelere dikkat etmeli? Hasar tespiti yolları, depozito iade koşulları, anahtar teslim tutanağı ve fotoğraf önemi.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

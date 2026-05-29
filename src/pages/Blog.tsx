@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kiracı Evi Teslim Ederken Nelere Dikkat Etmeli?",
+      excerpt: "Kiracı ev teslimi rehberi. Evden çıkarken depozitonuzu eksiksiz geri almak, haksız hasar taleplerini önlemek için anahtar teslim tutanağı, hasar tespiti, temizlik ve fotoğraf önemi gibi kritik detaylar.",
+      image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "29 Mayıs 2026",
+      path: "/kiraci-ev-teslim-rehberi",
+      category: "Rehber",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Kira Geliri Vergisi 2026 — Ev Sahibi Ne Kadar Vergi Öder?",
       excerpt: "Kira geliri vergisi 2026 rehberi. Konut ve işyeri kira geliri istisna tutarları, vergi dilimleri oranları, beyanname verme koşulları ve pratik hesaplama örnekleri.",
       image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
