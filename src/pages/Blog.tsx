@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Online Kira Sözleşmesi Geçerli mi? Dijital Sözleşme Rehberi",
+      excerpt: "Online kira sözleşmesi yasal geçerlilik rehberi. Çevrim içi kiralamada dijital imza, e-devlet entegrasyonu, hukuki zemin ve dijitalleşmenin mülk sahibi ile kiracılara sunduğu büyük avantajlar.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "30 Mayıs 2026",
+      path: "/online-kira-sozlesmesi-gecerli-mi",
+      category: "Teknoloji & Hukuk",
+      readTime: "11 Dakika"
+    },
+    {
       title: "Kiracı Evi Teslim Ederken Nelere Dikkat Etmeli?",
       excerpt: "Kiracı ev teslimi rehberi. Evden çıkarken depozitonuzu eksiksiz geri almak, haksız hasar taleplerini önlemek için anahtar teslim tutanağı, hasar tespiti, temizlik ve fotoğraf önemi gibi kritik detaylar.",
       image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

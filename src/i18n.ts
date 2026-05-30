@@ -61,6 +61,8 @@ const resources = {
         rentalTaxSeoDesc: "Kira geliri vergisi 2026 yılı güncel rehberi. Konut ve işyeri kira geliri istisna tutarı, vergi dilimleri, beyanname verme süresi ve detaylı vergi hesaplama örnekleri.",
         tenantHandoverTitle: "Kiracı Evi Teslim Ederken Nelere Dikkat Etmeli?",
         tenantHandoverSeoDesc: "Kiracı ev teslimi rehberi. Kiracı evi teslim ederken nelere dikkat etmeli? Hasar tespiti yolları, depozito iade koşulları, anahtar teslim tutanağı ve fotoğraf önemi.",
+        onlineLeaseTitle: "Online Kira Sözleşmesi Geçerli mi? Dijital Sözleşme Rehberi",
+        onlineLeaseSeoDesc: "Online kira sözleşmesi yasal geçerliliği rehberi. Dijital imza, e-devlet entegrasyonu, yasa hükümleri, ıslak imza farkı ve çevrim içi kiralamanın avantajları.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
