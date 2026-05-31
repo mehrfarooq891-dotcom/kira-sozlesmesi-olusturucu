@@ -29,6 +29,7 @@ import HomeRentalTipsBlog from './pages/HomeRentalTipsBlog';
 import RentalTaxBlog from './pages/RentalTaxBlog';
 import TenantHandoverBlog from './pages/TenantHandoverBlog';
 import OnlineLeaseBlog from './pages/OnlineLeaseBlog';
+import LeaseGuarantorBlog from './pages/LeaseGuarantorBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -184,7 +185,8 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
-              <li><Link to="/online-kira-sozlesmesi-gecerli-mi" className="hover:text-accent transition-colors font-bold text-accent">Online Kira Sözleşmesi 2026</Link></li>
+              <li><Link to="/kira-sozlesmesinde-kefil-rehberi" className="hover:text-accent transition-colors font-bold text-accent">Kira Sözleşmesinde Kefil 2026</Link></li>
+              <li><Link to="/online-kira-sozlesmesi-gecerli-mi" className="hover:text-accent transition-colors font-bold">Online Kira Sözleşmesi 2026</Link></li>
               <li><Link to="/kiraci-ev-teslim-rehberi" className="hover:text-accent transition-colors font-bold">Kiracı Ev Teslimi 2026</Link></li>
               <li><Link to="/kira-geliri-vergisi-2026-rehberi" className="hover:text-accent transition-colors font-bold">Kira Geliri Vergisi 2026</Link></li>
               <li><Link to="/ev-kiralarken-dikkat-edilmesi-gerekenler" className="hover:text-accent transition-colors font-bold">Ev Kiralarken Dikkat Edilecekler</Link></li>
@@ -253,6 +255,7 @@ export default function App() {
           <Route path="/kira-geliri-vergisi-2026-rehberi" element={<RentalTaxBlog />} />
           <Route path="/kiraci-ev-teslim-rehberi" element={<TenantHandoverBlog />} />
           <Route path="/online-kira-sozlesmesi-gecerli-mi" element={<OnlineLeaseBlog />} />
+          <Route path="/kira-sozlesmesinde-kefil-rehberi" element={<LeaseGuarantorBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>
