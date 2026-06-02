@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Ortak Kiracı Sözleşmesi Nasıl Düzenlenir? Ev Arkadaşı Rehberi",
+      excerpt: "Ortak kiracı sözleşmesi nasıl düzenlenir? Birden fazla kiracı olan kontratlarda müteselsil sorumluluklar, haklar, ev arkadaşı sözleşmesi şablonu ve yasal kurallar.",
+      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "2 Haziran 2026",
+      path: "/ortak-kiraci-sozlesmesi",
+      category: "Rehber & Mevzuat",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Kira Sözleşmesinde Kefil — Şartlar ve Sorumluluklar",
       excerpt: "Kira sözleşmesinde kefil şartları, kefilin sorumluluğu, kefalet türleri ve eş rızası gibi yasal detaylar. 2026 güncel Borçlar Kanunu kuralları çerçevesinde merak edilenler ve örnek kefalet klozu.",
       image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

@@ -65,6 +65,8 @@ const resources = {
         onlineLeaseSeoDesc: "Online kira sözleşmesi yasal geçerliliği rehberi. Dijital imza, e-devlet entegrasyonu, yasa hükümleri, ıslak imza farkı ve çevrim içi kiralamanın avantajları.",
         leaseGuarantorTitle: "Kira Sözleşmesinde Kefil — Şartlar ve Sorumluluklar",
         leaseGuarantorSeoDesc: "Kira sözleşmesinde kefil şartları, kefilin sorumluluğu, kefalet türleri ve eş rızası gibi yasal detaylar. 2026 güncel Borçlar Kanunu rehberi ve örnek kefalet klozu.",
+        coTenantTitle: "Ortak Kiracı Sözleşmesi Nasıl Düzenlenir? Ev Arkadaşı Rehberi",
+        coTenantSeoDesc: "Ortak kiracı sözleşmesi nasıl düzenlenir? Birden fazla kiracı olan kontratlarda müteselsil sorumluluklar, ev arkadaşı sözleşmesi şablonu ve yasal kurallar.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
