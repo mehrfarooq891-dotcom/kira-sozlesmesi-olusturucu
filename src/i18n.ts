@@ -67,6 +67,8 @@ const resources = {
         leaseGuarantorSeoDesc: "Kira sözleşmesinde kefil şartları, kefilin sorumluluğu, kefalet türleri ve eş rızası gibi yasal detaylar. 2026 güncel Borçlar Kanunu rehberi ve örnek kefalet klozu.",
         coTenantTitle: "Ortak Kiracı Sözleşmesi Nasıl Düzenlenir? Ev Arkadaşı Rehberi",
         coTenantSeoDesc: "Ortak kiracı sözleşmesi nasıl düzenlenir? Birden fazla kiracı olan kontratlarda müteselsil sorumluluklar, ev arkadaşı sözleşmesi şablonu ve yasal kurallar.",
+        noLeaseTitle: "Kira Sözleşmesi Olmadan Oturmak Riskli mi?",
+        noLeaseSeoDesc: "Kira sözleşmesiz oturmak yasal olarak riskli mi? Yazılı kontrat olmadığında hem kiracı hem de ev sahibi için ortaya çıkacak yasal riskler, tehlikeler ve kesin çözümler.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesi Olmadan Oturmak Riskli mi?",
+      excerpt: "Kira sözleşmesiz oturmak yasal olarak riskli mi? Yazılı kontrat olmadığında hem kiracı hem de ev sahibi için ortaya çıkacak yasal riskler, ispat zorlukları, tahliye tehlikeleri ve kesin hukuki çözüm yolları.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "3 Haziran 2026",
+      path: "/kira-sozlesmesiz-oturmak-riskli-mi",
+      category: "Rehber & Mevzuat",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Ortak Kiracı Sözleşmesi Nasıl Düzenlenir? Ev Arkadaşı Rehberi",
       excerpt: "Ortak kiracı sözleşmesi nasıl düzenlenir? Birden fazla kiracı olan kontratlarda müteselsil sorumluluklar, haklar, ev arkadaşı sözleşmesi şablonu ve yasal kurallar.",
       image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
