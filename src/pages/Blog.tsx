@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Ev Sahibinin Hakları 2026 — Bilmeniz Gereken Her Şey",
+      excerpt: "Ev sahibi hakları 2026 yılında nelerdir? Türk Borçlar Kanunu çerçevesinde güncel kira artış hakları, yasal tahliye gerekçeleri, kendi mülkünü kullanım hakkı ve mülk sahiplerini güvenceye alan yasal korumalar.",
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "4 Haziran 2026",
+      path: "/ev-sahibi-haklari-2026",
+      category: "Ev Sahibi Özel",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Kira Sözleşmesi Olmadan Oturmak Riskli mi?",
       excerpt: "Kira sözleşmesiz oturmak yasal olarak riskli mi? Yazılı kontrat olmadığında hem kiracı hem de ev sahibi için ortaya çıkacak yasal riskler, ispat zorlukları, tahliye tehlikeleri ve kesin hukuki çözüm yolları.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

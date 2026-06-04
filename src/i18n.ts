@@ -69,6 +69,8 @@ const resources = {
         coTenantSeoDesc: "Ortak kiracı sözleşmesi nasıl düzenlenir? Birden fazla kiracı olan kontratlarda müteselsil sorumluluklar, ev arkadaşı sözleşmesi şablonu ve yasal kurallar.",
         noLeaseTitle: "Kira Sözleşmesi Olmadan Oturmak Riskli mi?",
         noLeaseSeoDesc: "Kira sözleşmesiz oturmak yasal olarak riskli mi? Yazılı kontrat olmadığında hem kiracı hem de ev sahibi için ortaya çıkacak yasal riskler, tehlikeler ve kesin çözümler.",
+        landlordRightsTitle: "Ev Sahibinin Hakları 2026 — Bilmeniz Gereken Her Şey",
+        landlordRightsSeoDesc: "Ev sahibi hakları 2026 yılı güncel rehberi. Kira artış hakları, tahliye şartları, mülk kullanımı, yasal korumalar ve 2026 Borçlar Kanunu güncellemeleri.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
