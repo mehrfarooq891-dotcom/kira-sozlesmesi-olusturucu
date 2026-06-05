@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kiralık Evde Tadilat — Kim Öder? Yasal Düzenleme",
+      excerpt: "Kiralık ev tadilat masrafları kime aittir? Kiracı vs ev sahibi tadilat sorumluluğu, zorunlu vs keyfi tadilatlar, izin şartları ve sözleşmede belirtme detayları.",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "5 Haziran 2026",
+      path: "/kiralik-evde-tadilat-kim-oder",
+      category: "Tadilat & Giderler",
+      readTime: "11 Dakika"
+    },
+    {
       title: "Ev Sahibinin Hakları 2026 — Bilmeniz Gereken Her Şey",
       excerpt: "Ev sahibi hakları 2026 yılında nelerdir? Türk Borçlar Kanunu çerçevesinde güncel kira artış hakları, yasal tahliye gerekçeleri, kendi mülkünü kullanım hakkı ve mülk sahiplerini güvenceye alan yasal korumalar.",
       image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

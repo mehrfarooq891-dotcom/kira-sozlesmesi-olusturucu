@@ -71,6 +71,8 @@ const resources = {
         noLeaseSeoDesc: "Kira sözleşmesiz oturmak yasal olarak riskli mi? Yazılı kontrat olmadığında hem kiracı hem de ev sahibi için ortaya çıkacak yasal riskler, tehlikeler ve kesin çözümler.",
         landlordRightsTitle: "Ev Sahibinin Hakları 2026 — Bilmeniz Gereken Her Şey",
         landlordRightsSeoDesc: "Ev sahibi hakları 2026 yılı güncel rehberi. Kira artış hakları, tahliye şartları, mülk kullanımı, yasal korumalar ve 2026 Borçlar Kanunu güncellemeleri.",
+        rentalImprovementTitle: "Kiralık Evde Tadilat — Kim Öder? Yasal Düzenleme",
+        rentalImprovementSeoDesc: "Kiralık ev tadilat masrafları kime aittir? Kiracı vs ev sahibi tadilat sorumluluğu, zorunlu vs keyfi tadilatlar, izin şartları ve sözleşmede belirtme detayları.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

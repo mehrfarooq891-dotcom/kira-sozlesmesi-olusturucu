@@ -33,6 +33,7 @@ import LeaseGuarantorBlog from './pages/LeaseGuarantorBlog';
 import CoTenantBlog from './pages/CoTenantBlog';
 import NoLeaseBlog from './pages/NoLeaseBlog';
 import LandlordRightsBlog from './pages/LandlordRightsBlog';
+import RentalImprovementBlog from './pages/RentalImprovementBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -188,7 +189,8 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
-              <li><Link to="/ev-sahibi-haklari-2026" className="hover:text-accent transition-colors font-bold text-accent">Ev Sahibi Hakları 2026</Link></li>
+              <li><Link to="/kiralik-evde-tadilat-kim-oder" className="hover:text-accent transition-colors font-bold text-accent">Kiralık Evde Tadilat 2026</Link></li>
+              <li><Link to="/ev-sahibi-haklari-2026" className="hover:text-accent transition-colors font-bold">Ev Sahibi Hakları 2026</Link></li>
               <li><Link to="/kira-sozlesmesiz-oturmak-riskli-mi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesiz Oturmak 2026</Link></li>
               <li><Link to="/ortak-kiraci-sozlesmesi" className="hover:text-accent transition-colors font-bold">Ortak Kiracı Sözleşmesi 2026</Link></li>
               <li><Link to="/kira-sozlesmesinde-kefil-rehberi" className="hover:text-accent transition-colors font-bold">Kira Sözleşmesinde Kefil 2026</Link></li>
@@ -265,6 +267,7 @@ export default function App() {
           <Route path="/ortak-kiraci-sozlesmesi" element={<CoTenantBlog />} />
           <Route path="/kira-sozlesmesiz-oturmak-riskli-mi" element={<NoLeaseBlog />} />
           <Route path="/ev-sahibi-haklari-2026" element={<LandlordRightsBlog />} />
+          <Route path="/kiralik-evde-tadilat-kim-oder" element={<RentalImprovementBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>
