@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "IBAN ile Kira Ödemenin Önemi — Neden Nakit Ödememeli?",
+      excerpt: "Nakit kira ödemesi yapmak neden büyük hukuki riskler taşır? Kira IBAN ödeme süreci, ispat zorluğu, banka dekontunun delil niteliği ve Borçlar Kanunu kapsamında taraflar için yasal güvenceler.",
+      image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "6 Haziran 2026",
+      path: "/kira-iban-odeme-onemi",
+      category: "Kira Ödemesi",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Kiralık Evde Tadilat — Kim Öder? Yasal Düzenleme",
       excerpt: "Kiralık ev tadilat masrafları kime aittir? Kiracı vs ev sahibi tadilat sorumluluğu, zorunlu vs keyfi tadilatlar, izin şartları ve sözleşmede belirtme detayları.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

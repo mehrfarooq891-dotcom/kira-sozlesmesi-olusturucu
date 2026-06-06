@@ -73,6 +73,8 @@ const resources = {
         landlordRightsSeoDesc: "Ev sahibi hakları 2026 yılı güncel rehberi. Kira artış hakları, tahliye şartları, mülk kullanımı, yasal korumalar ve 2026 Borçlar Kanunu güncellemeleri.",
         rentalImprovementTitle: "Kiralık Evde Tadilat — Kim Öder? Yasal Düzenleme",
         rentalImprovementSeoDesc: "Kiralık ev tadilat masrafları kime aittir? Kiracı vs ev sahibi tadilat sorumluluğu, zorunlu vs keyfi tadilatlar, izin şartları ve sözleşmede belirtme detayları.",
+        ibanPaymentTitle: "IBAN ile Kira Ödemenin Önemi — Neden Nakit Ödememeli?",
+        ibanPaymentSeoDesc: "Kira IBAN ödeme neden önemlidir? Nakit kira ödemelerinde ispat zorluğu, banka dekontu önemi ve ev sahibi ile kiracı arasındaki yasal güvence detayları.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
