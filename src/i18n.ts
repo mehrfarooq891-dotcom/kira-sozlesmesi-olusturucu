@@ -75,6 +75,8 @@ const resources = {
         rentalImprovementSeoDesc: "Kiralık ev tadilat masrafları kime aittir? Kiracı vs ev sahibi tadilat sorumluluğu, zorunlu vs keyfi tadilatlar, izin şartları ve sözleşmede belirtme detayları.",
         ibanPaymentTitle: "IBAN ile Kira Ödemenin Önemi — Neden Nakit Ödememeli?",
         ibanPaymentSeoDesc: "Kira IBAN ödeme neden önemlidir? Nakit kira ödemelerinde ispat zorluğu, banka dekontu önemi ve ev sahibi ile kiracı arasındaki yasal güvence detayları.",
+        pdfImportanceTitle: "Kira Sözleşmesini PDF Olarak Kaydetmek Neden Önemli?",
+        pdfImportanceSeoDesc: "Kira sözleşmesi PDF kaydetmek neden hayati öneme sahiptir? Dijital arşiv oluşturma avantajları, ispat değeri, online araçlar ve güvenli saklama önerileri.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

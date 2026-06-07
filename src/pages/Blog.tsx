@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesini PDF Olarak Kaydetmek Neden Önemli?",
+      excerpt: "Kira sözleşmesini PDF olarak kaydetmek neden ve nasıl hayati koruma sağlar? Dijital arşiv kurmanın avantajları, ispat değeri, bulut tabanlı güvenli saklama ve modern online sözleşme araçları.",
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "7 Haziran 2026",
+      path: "/kira-sozlesmesi-pdf-kaydetmek",
+      category: "Dijitalleşme",
+      readTime: "12 Dakika"
+    },
+    {
       title: "IBAN ile Kira Ödemenin Önemi — Neden Nakit Ödememeli?",
       excerpt: "Nakit kira ödemesi yapmak neden büyük hukuki riskler taşır? Kira IBAN ödeme süreci, ispat zorluğu, banka dekontunun delil niteliği ve Borçlar Kanunu kapsamında taraflar için yasal güvenceler.",
       image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
