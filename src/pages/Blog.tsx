@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Öğrenci Kira Sözleşmesi — Kısa Dönemli Kiralama Rehberi",
+      excerpt: "Üniversite öğrencileri için kısa dönemli kiralama yasal kuralları, paylaşımlı öğrenci evi hakları, depozito iadesini garanti altına alan kritik tavsiyeler ve yasal güvenceler.",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "8 Haziran 2026",
+      path: "/ogrenci-kira-sozlesmesi-rehberi",
+      category: "Öğrenci Rehberi",
+      readTime: "13 Dakika"
+    },
+    {
       title: "Kira Sözleşmesini PDF Olarak Kaydetmek Neden Önemli?",
       excerpt: "Kira sözleşmesini PDF olarak kaydetmek neden ve nasıl hayati koruma sağlar? Dijital arşiv kurmanın avantajları, ispat değeri, bulut tabanlı güvenli saklama ve modern online sözleşme araçları.",
       image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

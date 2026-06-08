@@ -77,6 +77,8 @@ const resources = {
         ibanPaymentSeoDesc: "Kira IBAN ödeme neden önemlidir? Nakit kira ödemelerinde ispat zorluğu, banka dekontu önemi ve ev sahibi ile kiracı arasındaki yasal güvence detayları.",
         pdfImportanceTitle: "Kira Sözleşmesini PDF Olarak Kaydetmek Neden Önemli?",
         pdfImportanceSeoDesc: "Kira sözleşmesi PDF kaydetmek neden hayati öneme sahiptir? Dijital arşiv oluşturma avantajları, ispat değeri, online araçlar ve güvenli saklama önerileri.",
+        studentLeaseTitle: "Öğrenci Kira Sözleşmesi — Kısa Dönemli Kiralama Rehberi 2026",
+        studentLeaseSeoDesc: "Öğrenci kira sözleşmesi rehberi 2026. Kısa dönemli kiralama yasal kuralları, üniversite öğrencilerinin kiracılık hakları, depozito tavsiyeleri ve sözleşme detayları.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

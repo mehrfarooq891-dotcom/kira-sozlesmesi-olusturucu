@@ -36,6 +36,7 @@ import LandlordRightsBlog from './pages/LandlordRightsBlog';
 import RentalImprovementBlog from './pages/RentalImprovementBlog';
 import IbanPaymentBlog from './pages/IbanPaymentBlog';
 import PdfImportanceBlog from './pages/PdfImportanceBlog';
+import StudentLeaseBlog from './pages/StudentLeaseBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -191,6 +192,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/ogrenci-kira-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold text-accent font-sans">Öğrenci Kira Sözleşmesi 2026</Link></li>
               <li><Link to="/kira-sozlesmesi-pdf-kaydetmek" className="hover:text-accent transition-colors font-bold text-accent">Kira Sözleşmesi PDF Kaydetme 2026</Link></li>
               <li><Link to="/kira-iban-odeme-onemi" className="hover:text-accent transition-colors font-bold">Kira IBAN Ödemesi 2026</Link></li>
               <li><Link to="/kiralik-evde-tadilat-kim-oder" className="hover:text-accent transition-colors font-bold">Kiralık Evde Tadilat 2026</Link></li>
@@ -274,6 +276,7 @@ export default function App() {
           <Route path="/kiralik-evde-tadilat-kim-oder" element={<RentalImprovementBlog />} />
           <Route path="/kira-iban-odeme-onemi" element={<IbanPaymentBlog />} />
           <Route path="/kira-sozlesmesi-pdf-kaydetmek" element={<PdfImportanceBlog />} />
+          <Route path="/ogrenci-kira-sozlesmesi-rehberi" element={<StudentLeaseBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>
