@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kiracı Değişikliği Nasıl Yapılır? Devir Sözleşmesi Rehberi",
+      excerpt: "Kirada kiracı değişikliği devir işlemleri nasıl yürütülür? Kira devri şartları, yasal mal sahibi onayı, devir sözleşmesi imzalamanın kuralları ve yeni sözleşme gerekliliği hakkında bilmeniz gereken tüm detaylar.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "10 Haziran 2026",
+      path: "/kiraci-degisikligi-devir-rehberi",
+      category: "Kiracı Değişikliği",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Öğrenci Kira Sözleşmesi — Kısa Dönemli Kiralama Rehberi",
       excerpt: "Üniversite öğrencileri için kısa dönemli kiralama yasal kuralları, paylaşımlı öğrenci evi hakları, depozito iadesini garanti altına alan kritik tavsiyeler ve yasal güvenceler.",
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
