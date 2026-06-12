@@ -81,6 +81,8 @@ const resources = {
         studentLeaseSeoDesc: "Öğrenci kira sözleşmesi rehberi 2026. Kısa dönemli kiralama yasal kuralları, üniversite öğrencilerinin kiracılık hakları, depozito tavsiyeleri ve sözleşme detayları.",
         tenantChangeTitle: "Kiracı Değişikliği Nasıl Yapılır? Devir Sözleşmesi Rehberi",
         tenantChangeSeoDesc: "Kiracı değişikliği devir işlemleri nasıl yürütülür? Kira devri şartları, mal sahibi onayı ve yeni sözleşme gerekliliği hakkında bilmeniz gereken tüm detaylar.",
+        summerRentalTitle: "Yazlık Kiralama Sözleşmesi — Mevsimlik Kira Rehberi 2026",
+        summerRentalSeoDesc: "Yazlık kiralama sözleşmesi yasal kuralları, kısa dönem kira ve mevsimlik kiralama şartları, depozito iade güvenceleri ve eşya teslim tutanağı rehberi.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',

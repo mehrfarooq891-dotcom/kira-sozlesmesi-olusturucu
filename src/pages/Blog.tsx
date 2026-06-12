@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Yazlık Kiralama Sözleşmesi — Mevsimlik Kira Rehberi",
+      excerpt: "Yazlık kiralama sözleşmesi nasıl yapılır? Kısa dönem kira yasal sınırları, mevsimlik özel şartlar, depozito iade güvenceleri ve eşya teslim tutanağı rehberi.",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "11 Haziran 2026",
+      path: "/yazlik-kiralama-sozlesmesi-rehberi",
+      category: "Yazlık Kiralama",
+      readTime: "12 Dakika"
+    },
+    {
       title: "Kiracı Değişikliği Nasıl Yapılır? Devir Sözleşmesi Rehberi",
       excerpt: "Kirada kiracı değişikliği devir işlemleri nasıl yürütülür? Kira devri şartları, yasal mal sahibi onayı, devir sözleşmesi imzalamanın kuralları ve yeni sözleşme gerekliliği hakkında bilmeniz gereken tüm detaylar.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
