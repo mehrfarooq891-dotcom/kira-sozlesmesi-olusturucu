@@ -9,6 +9,15 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "Kira Sözleşmesinde Evcil Hayvan Maddesi Nasıl Eklenir?",
+      excerpt: "Kira sözleşmesine evcil hayvan izin maddesi eklenirken dikkat edilmesi gereken hukuki ayrıntılar, apartman yönetim planı engelleri, tahliye riski ve kopyalanabilir özel madde şablonları.",
+      image: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      date: "13 Haziran 2026",
+      path: "/kira-sozlesmesinde-evcil-hayvan-maddesi",
+      category: "Hukuk Rehberi",
+      readTime: "11 Dakika"
+    },
+    {
       title: "Yazlık Kiralama Sözleşmesi — Mevsimlik Kira Rehberi",
       excerpt: "Yazlık kiralama sözleşmesi nasıl yapılır? Kısa dönem kira yasal sınırları, mevsimlik özel şartlar, depozito iade güvenceleri ve eşya teslim tutanağı rehberi.",
       image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

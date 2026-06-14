@@ -39,6 +39,7 @@ import PdfImportanceBlog from './pages/PdfImportanceBlog';
 import StudentLeaseBlog from './pages/StudentLeaseBlog';
 import TenantChangeBlog from './pages/TenantChangeBlog';
 import SummerRentalBlog from './pages/SummerRentalBlog';
+import PetClauseBlog from './pages/PetClauseBlog';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SEO from './components/SEO';
 import { cn } from './lib/utils';
@@ -194,6 +195,7 @@ function Footer() {
           <div>
             <h4 className="text-accent font-black uppercase tracking-widest text-sm mb-8">Bilgi Merkezi</h4>
             <ul className="space-y-4 text-lg text-blue-100">
+              <li><Link to="/kira-sozlesmesinde-evcil-hayvan-maddesi" className="hover:text-accent transition-colors font-bold text-accent font-sans">Evcil Hayvan Maddesi 2026</Link></li>
               <li><Link to="/yazlik-kiralama-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold text-accent font-sans">Yazlık Kira Sözleşmesi 2026</Link></li>
               <li><Link to="/kiraci-degisikligi-devir-rehberi" className="hover:text-accent transition-colors font-bold text-accent font-sans">Kiracı Değişikliği Devir 2026</Link></li>
               <li><Link to="/ogrenci-kira-sozlesmesi-rehberi" className="hover:text-accent transition-colors font-bold text-accent font-sans">Öğrenci Kira Sözleşmesi 2026</Link></li>
@@ -283,6 +285,7 @@ export default function App() {
           <Route path="/ogrenci-kira-sozlesmesi-rehberi" element={<StudentLeaseBlog />} />
           <Route path="/kiraci-degisikligi-devir-rehberi" element={<TenantChangeBlog />} />
           <Route path="/yazlik-kiralama-sozlesmesi-rehberi" element={<SummerRentalBlog />} />
+          <Route path="/kira-sozlesmesinde-evcil-hayvan-maddesi" element={<PetClauseBlog />} />
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         </Routes>
       </main>

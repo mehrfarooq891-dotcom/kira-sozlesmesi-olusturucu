@@ -83,6 +83,8 @@ const resources = {
         tenantChangeSeoDesc: "Kiracı değişikliği devir işlemleri nasıl yürütülür? Kira devri şartları, mal sahibi onayı ve yeni sözleşme gerekliliği hakkında bilmeniz gereken tüm detaylar.",
         summerRentalTitle: "Yazlık Kiralama Sözleşmesi — Mevsimlik Kira Rehberi 2026",
         summerRentalSeoDesc: "Yazlık kiralama sözleşmesi yasal kuralları, kısa dönem kira ve mevsimlik kiralama şartları, depozito iade güvenceleri ve eşya teslim tutanağı rehberi.",
+        petClauseTitle: "Kira Sözleşmesinde Evcil Hayvan Maddesi Nasıl Eklenir?",
+        petClauseSeoDesc: "Kira sözleşmesine evcil hayvan izin maddesi nasıl eklenir? Apartman yönetim planı kuralları, yasal durum, evcil hayvan sözleşme örneği ve ev sahibi-kiracı tavsiyeleri.",
       },
       hero: {
         title: 'Kira Sözleşmesi Oluşturucu',
